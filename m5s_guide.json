@@ -1,0 +1,321 @@
+{
+  "raidName": "M5S - Bunny Boi",
+  "tier": "Savage",
+  "patch": "Dawntrail",
+  "mechanics": [
+    {
+      "id": "deep-cut",
+      "name": "Deep Cut",
+      "category": "Tank Buster",
+      "description": "Cone tank buster on top 2 aggro",
+      "tips": [
+        "Stack tanks together",
+        "Face boss away from party",
+        "Use mitigation cooldowns"
+      ]
+    },
+    {
+      "id": "boss-jump",
+      "name": "Boss Jumps Middle",
+      "category": "Positioning",
+      "description": "Boss repositions to center arena. Prepare for next mechanic."
+    },
+    {
+      "id": "flip-side",
+      "name": "Flip to A-side/B-side",
+      "category": "Mechanic",
+      "description": "Dictates if roles will get hit or if light parties will get hit.",
+      "notes": "Just ignore it for now."
+    },
+    {
+      "id": "twist-drop",
+      "name": "2/3/4-snap Twist & Drop the Needle",
+      "category": "Positioning",
+      "description": "The side with the waves will get hit 2, 3, or 4 times based on the cast name.",
+      "steps": [
+        {
+          "text": "Stand on the side with waves and take the hits"
+        },
+        {
+          "text": "After the specified number of hits, move to the other side to avoid a cleave on the side opposite the waves"
+        },
+        {
+          "text": "After final cleave, move to fixed spots for A-side/B-side:",
+          "substeps": [
+            "DPS plant at intercardinal where you are",
+            "Healers move north/south",
+            "Tanks move into the final cleave position"
+          ]
+        }
+      ],
+      "positions": {
+        "MT": "North",
+        "ST": "South",
+        "H1": "North",
+        "H2": "South",
+        "D1": "NW Intercardinal",
+        "D2": "SE Intercardinal",
+        "D3": "SW Intercardinal",
+        "D4": "NE Intercardinal"
+      },
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/e94560?text=Drop+the+Needle+Positions"
+      ]
+    },
+    {
+      "id": "celebrate",
+      "name": "Celebrate Good Times",
+      "category": "Raidwide",
+      "description": "Raidwide damage",
+      "tips": [
+        "Use mitigation and healing cooldowns"
+      ]
+    },
+    {
+      "id": "disco-infernal",
+      "name": "Disco Infernal",
+      "category": "Debuffs",
+      "description": "Raidwide damage. Everyone gets debuffs for upcoming mechanic.",
+      "steps": [
+        {
+          "text": "Check your debuff timer",
+          "substeps": [
+            "Supports get one timer",
+            "DPS get a different timer"
+          ]
+        }
+      ],
+      "warning": "Check your debuff timer as soon as it appears!"
+    },
+    {
+      "id": "funky-floor",
+      "name": "Funky Floor",
+      "category": "Dodge",
+      "description": "Alternating tiles. Stand on ones that aren't getting hit.",
+      "steps": [
+        {
+          "text": "Observe the first pattern to identify safe tiles"
+        },
+        {
+          "text": "Based on the first pattern, determine where you will take your spotlight when the debuff resolves"
+        }
+      ],
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/4ecdc4?text=Funky+Floor+Pattern+1",
+        "https://via.placeholder.com/600x400/1a1a2e/4ecdc4?text=Funky+Floor+Positions"
+      ],
+      "tips": [
+        "The safe spot pattern repeats - memorize it early for consistent positioning"
+      ]
+    },
+    {
+      "id": "ensemble-assemble",
+      "name": "Ensemble Assemble",
+      "category": "Spread + In/Out",
+      "description": "Spread around the boss in your assigned positions. Boss will alternate in/out throughout the mechanic.",
+      "positions": {
+        "MT": "North",
+        "OT": "North",
+        "H1": "West",
+        "H2": "East",
+        "D1": "Southwest",
+        "D2": "Southeast",
+        "D3": "Southwest",
+        "D4": "Northeast"
+      },
+      "steps": [
+        {
+          "text": "Start at max melee in your fan position"
+        },
+        {
+          "text": "Move in/out after each hit based on boss telegraph"
+        }
+      ]
+    },
+    {
+      "id": "arcade-night",
+      "name": "Arcady Night Fever",
+      "category": "Sequential Spreads",
+      "description": "Starting out at max melee in your fan, one player will get hit by a cone.",
+      "steps": [
+        {
+          "text": "First player hit moves to someone else in their role",
+          "substeps": [
+            "Whole party moves IN"
+          ]
+        },
+        {
+          "text": "Second player (opposite role) gets hit",
+          "substeps": [
+            "First player returns to their spot",
+            "Second player moves to someone in their role",
+            "All players move OUT"
+          ]
+        },
+        {
+          "text": "Repeat until all 8 players have been hit, plus one extra follow up on the final player"
+        }
+      ],
+      "warning": "Check the timer for your debuff at the end of this mechanic"
+    },
+    {
+      "id": "lets-dance",
+      "name": "Let's Dance",
+      "category": "Dodge + Debuffs",
+      "description": "Check debuffs for your timer. Go to your position based on the timer.",
+      "positions": {
+        "8 sec": "North edge",
+        "13 sec": "North-center",
+        "18 sec": "South-center",
+        "23 sec": "South edge"
+      },
+      "steps": [
+        {
+          "text": "While sticking to your area, dodge the left/right cleaves from the dancers at the north"
+        }
+      ],
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/ffd93d?text=Lets+Dance+Positions"
+      ]
+    },
+    {
+      "id": "lets-pose",
+      "name": "Let's Pose",
+      "category": "Check",
+      "description": "If you did the last 2 mechs perfectly you get a damage buff, otherwise you take damage."
+    },
+    {
+      "id": "ride-waves",
+      "name": "Ride the Waves",
+      "category": "Positioning",
+      "description": "Default positions with tank swaps based on which side needs to pull the boss.",
+      "positions": {
+        "MT/D1": "Northwest",
+        "OT/D2": "Northeast",
+        "H1/D3": "Southwest",
+        "H2/D4": "Southeast"
+      },
+      "steps": [
+        {
+          "text": "MT/OT swap depending on what side you need to pull the boss to",
+          "substeps": [
+            "If pulling east: MT goes NE",
+            "If pulling west: MT goes NW"
+          ]
+        }
+      ],
+      "warning": "When adjusting your lane for exa waves, try not to pull the boss away from the other group"
+    },
+    {
+      "id": "quarter-eighth",
+      "name": "Quarter Beats / Eighth Beats",
+      "category": "Positioning",
+      "description": "Two different position sets based on the cast name.",
+      "positions": {
+        "Quarter Beats": "Same as Ride the Waves default positions",
+        "Eighth Beats": {
+          "MT": "North",
+          "OT": "North",
+          "D1": "West",
+          "D2": "East",
+          "H1": "Southwest",
+          "H2": "Southeast",
+          "D3": "Southwest",
+          "D4": "Southeast"
+        }
+      },
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/e94560?text=Eighth+Beats+Positions"
+      ]
+    },
+    {
+      "id": "frogtourage",
+      "name": "Frogtourage",
+      "category": "Dodge + Pairs",
+      "description": "Group up in your light parties (G1 NW, G2 SE). Look at the 2 pairs of frogs cutting across the arena.",
+      "steps": [
+        {
+          "text": "Find the pair that turns out. Where they turn out will be the safe spot",
+          "substeps": [
+            "This will either be North/South or East/West"
+          ]
+        },
+        {
+          "text": "Quarter Beats: Melee's in front, ranged behind in your safespot"
+        },
+        {
+          "text": "Eighth Beats: Use special formation"
+        }
+      ]
+    },
+    {
+      "id": "disco-infernal-2",
+      "name": "Disco Infernal (Second)",
+      "category": "Pairs + Debuffs",
+      "description": "Reminder to check your debuffs",
+      "positions": {
+        "Pairs": {
+          "MT/D3": "Northwest",
+          "H2/D4": "Northeast",
+          "H1/D1": "Southwest",
+          "OT/D2": "Southeast"
+        }
+      },
+      "steps": [
+        {
+          "text": "Rotate clockwise for frog/spotlight as needed",
+          "substeps": [
+            "Group with lower countdowns in spotlights first",
+            "Other group be close to the frog and bait the cones away from spotlights",
+            "Swap after first set"
+          ]
+        }
+      ],
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/4ecdc4?text=Disco+Pairs+West",
+        "https://via.placeholder.com/600x400/1a1a2e/4ecdc4?text=Disco+Pairs+East"
+      ]
+    },
+    {
+      "id": "lets-dance-remix",
+      "name": "Let's Dance! Remix",
+      "category": "Dodge",
+      "description": "Same as before with dodging the cleaves displayed at North",
+      "notes": "This time they're faster and include forward/back dodges instead of just left/right.",
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/ffd93d?text=Dance+Remix+Pattern+1",
+        "https://via.placeholder.com/600x400/1a1a2e/ffd93d?text=Dance+Remix+Pattern+2"
+      ]
+    },
+    {
+      "id": "frogtourage-2",
+      "name": "Frogtourage (Second)",
+      "category": "Dodge",
+      "description": "Dodge half room cleaves from the two ADS, then from boss.",
+      "steps": [
+        {
+          "text": "Line yourself up with one ADS and move to the safe spot of the other"
+        },
+        {
+          "text": "Repeat"
+        },
+        {
+          "text": "Dodge half room cleave from boss"
+        },
+        {
+          "text": "Frogs appear at edge - only one pair this time",
+          "substeps": [
+            "Supports bait first frogs",
+            "DPS bait second"
+          ]
+        },
+        {
+          "text": "Cleaves from boss and 2 ADS again at the end"
+        }
+      ],
+      "images": [
+        "https://via.placeholder.com/600x400/1a1a2e/e94560?text=Frogtourage+2+Positions"
+      ]
+    }
+  ]
+}
