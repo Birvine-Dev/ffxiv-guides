@@ -1,0 +1,606 @@
+{
+  "raidName": "M10S - The Xtremes",
+  "tier": "Savage",
+  "patch": "Dawntrail 7.4",
+
+  "defaults": {
+    "macro": "???",
+    "waymarks": {},
+    "notes": "Clear: https://www.youtube.com/watch?v=Uym6JGKbPfU"
+  },
+
+  "mechanics": [
+    {
+      "id": "Hot-Impact-1",
+      "name": "Hot Impact",
+      "category": "Tankbuster",
+      "timestamp": "0:09",
+      "description": "2 Person Tankbuster targetted on the MT.",
+      "damage": "???",
+      "notes": "Boss will dash to a random cardinal afterwards."
+    },
+
+    {
+      "id": "Flame-Floater-1",
+      "name": "Flame Floater (Box)",
+      "category": "Tethers",
+      "timestamp": "0:22",
+      "description": "4 players will get tethered, one after the other.  Need to direct these tethers to make a box around the arena.",
+      "video": "https://youtube.com/clip/Ugkxh_cNhY1BplPV3IRMZ_Qc0QRySj-XtK0x?si=71GcB9Q90q57zR98",
+      "steps":[
+        "Treat the boss as the new North.  If tethered you also have a number in your buff list, indicating which tether you are.",
+        "First player tethered go Northwest.",
+        "Second player tethered (tethered to first player) go Southwest.",
+        "Third player tethered go Southeast.",
+        "Fourth player tethered go Northeast.",
+        "Rest of the players just follow best you can to keep damage up."
+      ],
+      "warning": "Charges give fire vuln that reduces in time with each charge.  1st 12s, second 9s, third 6s, 4th 3s.  Careful not to get hit if you have a vuln.",
+      "notes": "Pull boss just out of last line once its finished charging to make room for spreads.  Slightly towards the middle of the arena."
+    },
+
+    {
+      "id": "Flame-Floater-2",
+      "name": "Flame Floater (Line)",
+      "category": "Tethers",
+      "timestamp": "0:22",
+      "description": "Lucrezia Strat, will write it up later if needed",
+      "video": "https://www.twitch.tv/caelocus/clip/CrazyFastBeeAMPEnergy-rZp_MRhoiW-gzfnl"
+    },
+
+    {
+      "id": "Alley-oop-Inferno-1",
+      "name": "Alley-oop Inferno (Box)",
+      "category": "Spread",
+      "timestamp": "0:48",
+      "description": "All players get a circle AoE on them. Drop these as shown in the diagram below. They will leave a puddle on the ground that you need to move out of.",
+      "video": "https://youtube.com/clip/Ugkx5wQPTUess_RTdJRfjxwErwcxifDX3g4S?si=EFZhEuYUswB7jNPR",
+      "images":[
+        "../images/m10s/alley-oop-spread.png"
+      ],
+      "tips": [
+        "Facing the corner the boss was in, Left->MT/D1/D2/OT<-Right."
+      ],
+      "notes": "Pull boss slightly towards the middle after AoE's hit."
+    },
+
+    {
+      "id": "Cutback-Blaze-1",
+      "name": "Cutback Blaze",
+      "category": "Stack",
+      "timestamp": "0:57",
+      "description": "Stack together with the boss between the party and furthest corner.",
+      "images":[
+        "../images/m10s/cutback-blaze.png"
+      ],
+      "notes": "Walk through the boss as the cast finishes/animation ends.  Towards the corner to stay in the cone."
+    },
+
+    {
+      "id": "Pyrotation-1",
+      "name": "Pyrotation",
+      "category": "Multihit Stack AoE",
+      "timestamp": "1:04",
+      "description": "3 hit stack AoE.  Each hit leaves a fire puddle.  Walk this towards the corner.",
+      "tips":[
+        "Tank can run ahead of the group, leaving the group to take stacks as 7 to make uptime easier for the melee."
+      ]
+    },
+
+    {
+      "id": "Divers'-Dare-1",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "1:17",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???",
+      "notes": "Boss will jump just north of the centre of the arena and swap with Deep Blue."
+    },
+
+    {
+      "id": "Sick-Swell-1",
+      "name": "Sick Swell",
+      "category": "Setup",
+      "timestamp": "1:34",
+      "description": "Boss tethers one of the cardinals.  This will create a wave at that wall for upcoming mech which we will treat as North.  Also gets either 2, 4 (cannot find a clip of this) or 8 orbs around him. If 2 it will be light party stacks, if 4 it will be support/dps pairs, if 8 then spread.",
+      "notes": "Pull boss to the middle of the arena before it jumps away.",
+      "images":[
+        "../images/m10s/2-balls.png",
+        "../images/m10s/8-balls.png"
+      ]
+    },
+
+    {
+      "id": "Wave-1",
+      "name": "Wave",
+      "category": "Resolve",
+      "timestamp": "1:55",
+      "description": "Knockback from wave into mechanic that was setup before (Spread/Pairs/Light Parties).",
+      "video": "Light Parties: https://youtube.com/clip/Ugkx9UtYhS3k0okFvsVPSr7FkHsojAImLZEU?si=VM1K_gBbebq6RgHU",
+      "steps":[
+        "Split the wave into 3 lanes.",
+        "Boss will appear on the wave in one of the three lanes, this lane is unsafe.",
+        "Get knocked back by the wave into your position.  Boss will spawn back into the middle after the knockback and before the Spread/Pairs/Light Parties resovles.",
+        "Wait in your position for mechanic to resolve."
+      ],
+      "tips": [
+        "Can antiknockback the wave if desired."
+      ],
+      "images":[
+        "../images/m10s/spread.png",
+        "../images/m10s/pairs.png",
+        "../images/m10s/light-parties.png"
+      ],
+      "notes": "Spread into clockspots around boss after mechanic resolves."
+    },
+
+    {
+      "id": "Alley-oop-1",
+      "name": "Alley-oop Double-dip OR Reverse Alley-oop",
+      "category": "Proteans",
+      "timestamp": "2:00",
+      "description": "Start in clock spots.",
+      "steps":[
+        {
+            "text": "Alley-oop Double-dip",
+            "substeps":[
+                "After you get hit in your clock spot, move into where the didn't get hit."
+            ]
+        },
+        {
+            "text": "Reverse Alley-oop",
+            "substeps":[
+                "After you get hit in your clock spot, stay where you are."   
+            ]
+        }
+      ],
+      "positions":{
+        "MT":"North",
+        "OT":"South",
+        "H1":"West",
+        "H2":"East",
+        "D1":"Southwest",
+        "D2":"Southeast",
+        "D3":"Northwest",
+        "D4":"Northeast"
+      },
+      "notes": "Double-dip: https://youtube.com/clip/Ugkxauibid1DMMJkCaSfRsNu6MqIkoPfgAZc?si=VlWZoa5HOtjt42cl Reverse: https://youtube.com/clip/UgkxsL_04Tj4GOcd7n6djxR61SfNZK5QYC4f?si=B0AEyyzaLGbq3zeG"
+    },
+
+    {
+      "id": "Deep-Impact",
+      "name": "Deep Impact",
+      "category": "Tankbuster",
+      "timestamp": "2:12",
+      "description": "Tankbuster on the furthest player.  MT just take a step back while party groups behind the boss on the hitbox.  This will knockback the tank a short distance so either anti-kb or position to get knocked back safely.  Small AoE so make sure you're far enough away from party."
+    },
+
+    {
+      "id": "Divers'-Dare-2",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "2:19",
+      "description": "Raidwide Damage.",
+      "damage": "???",
+      "notes": "Boss will jump just west of the centre of the arena and Red Hot will appear as well."
+    },
+
+
+    {
+      "id": "Xtreme-Spectacular-1",
+      "name": "Xtreme Spectacular",
+      "category": "Duo Mech",
+      "timestamp": "2:38",
+      "description": "Bosses become untargetable.  Party move North to the edge of the arena to avoid damage cleave through the centre of the arena.  Lots of small hits.",
+      "notes": "When bosses targetable, MT group pick up Blue, OT group pick up Red.  Blue will jump Northwest, Red will jump Southeast.",
+      "warning": "Bosses will now make their health even.  At certain points during the fight, if bosses health are not within x%, then it will be a wipe (or maybe just share health again?  I don't know I've only seen clear vids)."
+    },
+
+    {
+      "id": "Insane-Air-1",
+      "name": "Insane Air",
+      "category": "Light Party Mech",
+      "timestamp": "3:09",
+      "description": "All players follow your previously assigned boss.  Bosses will create trails, then hit light parties (4 closest people) with different mechs.  Need to check symbols at the end of the trails.",
+      "video": "https://www.twitch.tv/rukaharu_kamo/clip/TenderSweetLyrebirdShadyLulu-43dUyndtpFqJhawZ",
+      "steps": [
+        {
+            "text": "Deep Blue",
+            "substeps": [
+                "Will rotate from Northwest->North->Northeast->East->Centre OR Southeast"
+            ]
+        },
+        {
+            "text": "Red Hot",
+            "substeps":[
+                "Will rotate from Southeast->South->Southwest->West->Centre OR Northwest"
+            ] 
+        },
+        {
+          "text": "Surfboard Up",
+          "substeps": [
+            "Circle Tankbuster on closest target.",
+            "Leaves a puddle if fire, try to drop next to closest edge."
+          ]
+        },
+        {
+          "text": "Surfboard Down",
+          "substeps":[
+            "Line AoEs on 4 closest targets, point these out of the arena. Don't clip any fire on the ground.",
+            "Fire again leaves puddles on the ground.",
+            "While at the wall, looking at your boss: Left->Tank, Melee, Ranged, Healer<-Right"
+          ]
+        },
+        {
+          "text": "Surfboard Sideways",
+          "substeps": [
+            "Cone Tankbuster on the closest target.",
+            "Point it at the wall as much as possible.  Don't have clip any fire with water."
+          ]
+        }
+      ],
+      "positions": {
+        "G1": "Northwest",
+        "G2": "Southeast"
+      },
+      "tips": [
+        "Easiest way to think of the surfboards is that the party only gets involved if it surfboard down.  Otherwise its just the tanks job who can go to roughly the same spot everytime and have others position around them.",
+        "Deep Blue: https://youtube.com/clip/UgkxETW8teLQb0-5FTodStjLEqkVn4OVbgwG?si=lQzDmXFL3SnWtmCI",
+        "Red Hot: https://youtube.com/clip/UgkxDZfwknzJzkBQd07Ty1QMsURRnC_RgHSt?si=j-b-GMxdVX4hNVDP"
+      ],
+      "warning": "Don't clip any of the fire puddles with water or it will be death.",
+      "notes": "Pull bosses middle afterwards for cleave."
+    },
+
+    {
+      "id": "Divers'-Dare-3",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "3:45",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???",
+      "warning": "HP check on the bosses."
+    },
+
+    {
+      "id": "Watersnaking-1",
+      "name": "Watersnaking/Firesnaking",
+      "category": "Debuffs",
+      "timestamp": "4:00",
+      "description": "Bosses will jump slightly west/east of arena.  Go to whichever one you weren't on before and stack under it. This will give you the a debuff for your original boss.",
+      "steps":[
+        {
+            "text": "Deep Blue",
+            "substeps":[
+                "Will jump to West Wall.",
+                "Spread around boss for line AoEs.",
+                "Treat boss as North: Top Left - Tank. Bottom Left - Healer. Top Right - Melee.  Bottom Right - Ranged.",
+                "Move out of line AoE's after as they will repeat."
+            ]
+        },
+        {
+            "text": "Red Hot",
+            "substeps":[
+                "Will jump between East Wall and Centre.",
+                "4 red debuff players will get circle AoE's on them.",
+                "Position under boss towards wall, Boss is North. Top Left - Tank. Bottom Left - Healer. Top Right - Melee.  Bottom Right - Ranged.",
+                "These will drop fire puddles which you need to move out of."
+            ]
+        }
+      ],
+      "tips":[
+        "Deep Blue: https://youtube.com/clip/Ugkx-YSSKYuzXlFBsBWt8ro_9GHFFhBWFNKR?si=DMvjlVKiMubaC8Ev",
+        "Red Hot: https://youtube.com/clip/UgkxnYHzaVJ7my8rnOB-o6WdEaFlHWsO5LvR?si=GGLA75HnKbLSkktN"
+      ],
+      "notes": "Deep Blue Tank make your way over to Red Hot tank in the middle of the arena for a shared Tankbuster."
+    },
+
+    {
+      "id": "Hot-Impact-2",
+      "name": "Hot Impact",
+      "category": "Tankbuster",
+      "timestamp": "4:24",
+      "description": "2 Person Tankbuster targetted on the Red Hot Tank.",
+      "damage": "???",
+      "warning": "Decently large AoE so others be careful.  Deep Blue jumps centre during this."
+    },
+
+    {
+      "id": "Deep-Varial-1",
+      "name": "Deep Varial",
+      "category": "Mini Wave",
+      "timestamp": "4:31",
+      "description": "Deep Blue will create arrows under him pointing at all a wall.  This is the new North. If there is one orb on this wave then water players will stack, if 4 then spreading.",
+      "steps":[
+        "Spread along North Wall wall, water left, fire right. Water players stack if one orb on wave.",
+        "Spread: Left->Ranged/Healer/Tank/Melee/Melee/Tank/Healer/Ranged->Right"
+      ],
+      "images":[
+        "../images/m10s/deep-varial.png"
+      ],
+      "warning": "The wave will hit the fire puddles and detonate them.  This is a relatively small AoE but be careful if you're spreading near it.  Uptime also sucks during this part.",
+      "notes": "Drag Deep Blue middle when you can"
+    },
+
+    {
+      "id": "Hot-Aerial-1",
+      "name": "Hot Aerial + Slickest Take-off + Cutback Blaze",
+      "category": "Overlaps the Mechanic",
+      "timestamp": "4:44",
+      "description": "A few mechanics in a row here, dealth with in your light party while being aware of the other group for hte most part.",
+      "video": "",
+      "steps": [
+        {
+          "text": "Hot Aerial (Deep Blue people just stay out of the way and prep for Slickest Take-off)",
+          "substeps": [
+            "Red Hot will jump to the middle",
+            "Furthest Red Hot player will be targetted one at a time, for the Red Hot to jump on them, leaving a puddle each time.  Each player needs to get hit once.",
+            "As much as possible, try drop these North/South of the group of 4 puddles you dropped earlier at the start.",
+            "Bait Order: Healer/Tank/Ranged/Melee.  First person baits North, second person baits South, so on.",
+            "If not baiting, try to stay near the boss or middle as much as possible.  This is a downtime mech.",
+            "Video: https://youtube.com/clip/UgkxzlpV8OWebCpL38AaWsS19PSrLBd7sLMn?si=dKriiFDXtTc2OTOz",
+            "After the 4 hits, prepare for knockback from Sickest Take-off while staying out of Deep Blue players way."
+          ]
+        },
+        {
+          "text": "Slickest Aerial",
+          "substeps": [
+            "Deep Blue will either show 1 or 4 orbs.  1 orb all water players need to stack soon, 4 orbs they need to spread.",
+            "Deep Blue will jump at the giant wave, choosing a lane, same as earlier.  Treat the giant wave as North.",
+            "All players need to get out of the way of this wave, recommend all players from both groups anti-kb the wave to avoid running into a fire.  Only exception is maybe Deep Blue Tank.",
+            "While preparing for the wave, Deep Blue players either group up or spread out, North->Ranged/Tank/Melee/Healer<-South.",
+            "For this spread/stack, Red Hot players try to be West or South of Deep Blue players.",
+            "After wave hits, make sure you are in position for stack/spread, then go join Red Hot players who will be making a safe cone for you.",
+            "Video: https://youtube.com/clip/UgkxFy2g1pkL_LRxUfbqjFy4OXAJlaUKDnuJ?si=fiF6ZiPwB4Yj0KCm"
+          ]
+        },
+        {
+          "text": "Cutback Blaze",
+          "substeps": [
+            "Afterwave hits, Red Hot Players group on your boss, and put the boss between you and as big of a safe area as you can get.  Ideally this is towards the Deep Blue players if possible.",
+            "All players move into the cone and close to Red Hot.  Deep Blue tank run away from the party and make sure you are furthest from Deep Blue for the Tankbuster.  Ideally he should be in the middle of the room if you dragged him there earlier.",
+            "Would recommend Deep Blue tank just invuln and run into the fire if needed.  If fortunate can anti-KB and just run further down the cone, away from the party.",
+            "Video: https://youtube.com/clip/UgkxFy2g1pkL_LRxUfbqjFy4OXAJlaUKDnuJ?si=fiF6ZiPwB4Yj0KCm"
+          ]
+        }
+      ],
+      "warning": "You can go into the fire from the cone.  It just puts a dot on you that is manageable to heal through.  Don't panic.  Also always be aware of fire puddles getting hit by water like the giant wave."
+    },
+
+    {
+      "id": "Divers'-Dare-4",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "5:17",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???",
+      "notes": "Boss will jump just north of the centre of the arena and swap with Deep Blue."
+    },
+
+    {
+      "id": "Deep-Areial-1",
+      "name": "Deep Aerial",
+      "category": "DPS Check",
+      "timestamp": "5:30",
+      "description": "Two players go into the tower and get jailed. For us we will pick the two healers/melee (can pick the two tanks for less damage overall, but they won't be able to do any movement abilities). Melee only if it lets us skip a tether.",
+      "steps":[
+        "Bosses will jump Southwest/Southeast. The main idea is that you want to always pull the Red Hot tether through the boss, while keeping the Deep Blue tether out of the way.  If they cross then a puddle will spawn.",
+        "Pull the Deep Blue tether to the cardinal next to Red Hot, as far south as possible with the tether stretched.",
+        "Pull Red Hot tether, directly across the arena, to the opposite cardinal.",
+        "Bosses will dash and one AoE will spawn where they crossed.  Be careful to dodge this.",
+        "Continue to pull Red Hot through the same diagonal. This will continue to hit the jail in the middle.",
+        "For Deep Blue's tether, 2nd tether should go North, at the edge.  This should avoid it hitting the people and the middle and crossing the Red Hot tether.  Keep it going going back and forth between North and the side cardinal."
+      ],
+      "video": "https://youtube.com/clip/UgkxNW6-8L6DxQp3VVpNAyx4xN5xL2NZBP1o?si=ja3yBT7H9KHzoNfh",
+      "images":[
+        "../images/m10s/deep-varial-1.png",
+        "../images/m10s/deep-varial-2.png",
+        "../images/m10s/deep-varial-3.png"
+      ],
+      "tips":[
+        "Bosses are untargetable during this phase. Need to DPS down the jail."
+      ]
+    },
+
+    {
+      "id": "Divers'-Dare-5",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "6:36",
+      "description": "Raidwide Damage.",
+      "damage": "???",
+      "notes": "Boss will jump just north of the centre of the arena and swap with Deep Blue."
+    },
+
+    {
+      "id": "Sick-Swell-2",
+      "name": "Sick Swell",
+      "category": "Light Party Mech",
+      "timestamp": "6:49",
+      "description": "Red Hot will jump North, while Deep Blue tethers either East or West.  Red Hot will then split the arena so need to split the party, Group 1 West, Group 2 East.",
+      "steps":[
+        {
+            "text": "Part 1",
+            "substeps":[
+                "Drop puddles at inter cardinals, 2 at each corner. North->Ranged/Tank/Melee/Healer<-South.",
+                "Deep Blue will jump to centre of East or West side.",
+                "Those on Deep Blue side get close and spreat around the boss on your side.  Those far spread on your side.  See video for positions.  Same North->South as before.",
+                "Close to Blue: https://youtube.com/clip/UgkxFmVkHD7E31uzcjA2YqEdVHDue489OkU5?si=bMGLHcTyw0IQIWTv",
+                "Far from Blue: https://youtube.com/clip/UgkxX1ptx_IggrIPw41hC-0P8GGh-tBG4uJx?si=F3IEm9X7FU0SodyO",
+                "This will also be Reverse (Stay at your cleave), or Double-dip (Move from your cleave) after the first hit."
+            ] 
+        },
+        {
+            "text": "Part 2",
+            "substeps":[
+                "After cleaves, move back North/South to take a pair stack and drop a puddle.  Drop close to the wall to give yourself more space.",
+                "While dropping puddle, keep an eye on Deep Blue for orbs, either 2 or 8 again.",
+                "Deep Blue will jump to the wave, hitting one of the 3 lanes again.",
+                "Video: https://youtube.com/clip/UgkxSdqkeA6kG9_0yGC8ESaAAMXH_IlMGp3t?si=It8VopUdIHqU3DIm"
+            ]
+        },
+        {
+            "text": "Part 3",
+            "substeps":[
+                "Anti-KB the wave and either spread or stay in your light parties depending on the amount of orbs.",
+                "Do this in the safe 2 lanes.  Looking at the middle of the arena, spread in a box if you need to. Tanks/Melee closer to the middle, Healers/Ranged closer to the edge.",
+                "Be very careful during the Stack/Spread of the Water hitting the fire puddles, including one in the very centre of the arena, under Red Hot.",
+                "Stacks: https://youtube.com/clip/UgkxV2HllfFUs5sz54Mtx6O3NSR3P72_dnTw?si=x2mIdyGecR2WEn0g",
+                "Spreads: "
+            ]
+        }
+      ],
+      "images":[
+        "../images/m10s/2-balls.png",
+        "../images/m10s/8-balls.png"
+      ]
+    },
+
+    {
+      "id": "Divers'-Dare-6",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "7:29",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Xtreme-Watersnaking",
+      "name": "Xtreme Watersnaking",
+      "category": "Debuffs",
+      "timestamp": "7:45",
+      "description": "MT Group under Deep Blue.  OT Group under Red Hot.  When debuffs come out, make sure you have the same colour as the boss you are attacking.  Swap if needed.",
+      "steps":[
+        "This is mostly solved the same way as Insane Air, except with some swaps during it.",
+        {
+            "text": "Swaps",
+            "substeps":[
+                "This is the big difference this time round.  Each set needs to have someone from each group swap to the other group. Do this before each movement of the mechanic.",
+                "Swap order will be Healer->Ranged->Melee.  However, If it is Surfboard up next, then it is always the tanks turn to swap.  This can be anywhere in the order so just be aware.",
+                "Once you swap you stay with your new group.",
+                "Video: https://youtube.com/clip/UgkxsbiD31eYxUpkgleD4TMz0RuGQxSqVrkg?si=mYnT_AC9LFCRvI1w"
+            ]
+        },
+        {
+            "text": "Deep Blue",
+            "substeps": [
+                "Will rotate from Northwest->North->Northeast->East->Centre OR Southeast"
+            ]
+        },
+        {
+            "text": "Red Hot",
+            "substeps":[
+                "Will rotate from Southeast->South->Southwest->West->Centre OR Northwest"
+            ] 
+        },
+        {
+          "text": "Surfboard Up",
+          "substeps": [
+            "Circle Tankbuster on closest target.",
+            "Leaves a puddle if fire, try to drop next to closest edge."
+          ]
+        },
+        {
+          "text": "Surfboard Down",
+          "substeps":[
+            "Line AoEs on 4 closest targets, point these out of the arena. Don't clip any fire on the ground.",
+            "Fire again leaves puddles on the ground.",
+            "While at the wall, looking at your boss: Left->Tank, Melee, Ranged, Healer<-Right"
+          ]
+        },
+        {
+          "text": "Surfboard Sideways",
+          "substeps": [
+            "Cone Tankbuster on the closest target.",
+            "Point it at the wall as much as possible.  Don't have clip any fire with water."
+          ]
+        }
+      ],
+      "tips": [
+        "Easiest way to think of the surfboards is that the party only gets involved if it surfboard down.  Otherwise its just the tanks job who can go to roughly the same spot everytime and have others position around them.",
+        "Deep Blue: https://youtube.com/clip/UgkxETW8teLQb0-5FTodStjLEqkVn4OVbgwG?si=lQzDmXFL3SnWtmCI",
+        "Red Hot: https://youtube.com/clip/UgkxDZfwknzJzkBQd07Ty1QMsURRnC_RgHSt?si=j-b-GMxdVX4hNVDP"
+      ],
+      "warning": "Don't clip any of the fire puddles with water or it will be death.",
+      "notes": "Pull bosses middle afterwards for cleave."
+    },
+
+    {
+      "id": "Divers'-Dare-7",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "8:44",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Alley-oop-1",
+      "name": "Alley-oop Double-dip OR Reverse Alley-oop",
+      "category": "Proteans",
+      "timestamp": "8:59",
+      "description": "Start in clock spots. Move out to edge of the arena to drop your puddle",
+      "steps":[
+        {
+            "text": "Alley-oop Double-dip",
+            "substeps":[
+                "After you get hit in your clock spot, move into where the didn't get hit."
+            ]
+        },
+        {
+            "text": "Reverse Alley-oop",
+            "substeps":[
+                "After you get hit in your clock spot, stay where you are.",
+                "Careful of water hitting your fire and doing an AoE."   
+            ]
+        }
+      ],
+      "positions":{
+        "MT":"North",
+        "OT":"South",
+        "H1":"West",
+        "H2":"East",
+        "D1":"Southwest",
+        "D2":"Southeast",
+        "D3":"Northwest",
+        "D4":"Northeast"
+      }
+    },
+
+    {
+      "id": "Deep-Impact-2",
+      "name": "Deep Impact + Pyrotation",
+      "category": "Stack AoE + Tank Buster",
+      "timestamp": "9:11",
+      "description": "Take fire stack to north, near Deep Blue. Rotate the stack clockwise for the 3 hits.  Deep Blue tank move out and prepared to be knocked back with the Tankbuster.",
+      "video": "https://youtube.com/clip/Ugkxun3VNlglZul_twQXsAZH3qUOvGoTdWOI?si=dIfEh1KAQfB-iD8c"
+    },
+
+    {
+      "id": "Divers'-Dare-8",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "9:25",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Divers'-Dare-9",
+      "name": "Divers' Dare",
+      "category": "Raidwide Damage",
+      "timestamp": "9:34",
+      "description": "Raidwide Damage and Arena clears.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Over-the-falls",
+      "name": "Over the Falls",
+      "category": "Enrage",
+      "timestamp": "9:50",
+      "description": "Enrage"
+    }
+  ]
+}

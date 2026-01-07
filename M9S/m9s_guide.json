@@ -25,10 +25,10 @@
     {
       "id": "Hardcore-1",
       "name": "Hardcore",
-      "category": "Tank Buster",
+      "category": "Tankbuster",
       "timestamp": "0:15",
       "damage": "~220k",
-      "description": "Tank Busters on top 2 aggro.  AoE on the person hit. ~??? Damage.",
+      "description": "Tankbusters on top 2 aggro.  AoE on the person hit. ~??? Damage.",
       "positions": {
         "MT": "Northwest",
         "OT": "Northeast",
@@ -254,9 +254,9 @@
     {
       "id": "Hardcore-2",
       "name": "Hardcore",
-      "category": "Tank Buster",
+      "category": "Tankbuster",
       "timestamp": "3:36",
-      "description": "Tank Busters on top 2 aggro.  AoE on the person hit.",
+      "description": "Tankbusters on top 2 aggro.  AoE on the person hit.",
       "positions": {
         "MT": "Northeast",
         "OT": "Northwest",
@@ -566,9 +566,9 @@
     {
       "id": "Hardcore-3",
       "name": "Hardcore",
-      "category": "Tank Buster",
+      "category": "Tankbuster",
       "timestamp": "8:53",
-      "description": "Tank Busters on top 2 aggro.  AoE on the person hit.",
+      "description": "Tankbusters on top 2 aggro.  AoE on the person hit.",
       "positions": {
         "MT": "Northeast",
         "OT": "Northwest",
