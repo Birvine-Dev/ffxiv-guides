@@ -1,0 +1,612 @@
+{
+  "raidName": "M9S - Vamp Fatale",
+  "tier": "Savage",
+  "patch": "Dawntrail 7.4",
+
+  "defaults": {
+    "macro": "???",
+    "waymarks": {
+      "Standard": "{\"Name\":\"M9S\",\"MapID\":1069,\"A\":{\"X\":100.0,\"Y\":0.0,\"Z\":90.0,\"ID\":0,\"Active\":true},\"B\":{\"X\":110.0,\"Y\":0.0,\"Z\":100.0,\"ID\":1,\"Active\":true},\"C\":{\"X\":100.0,\"Y\":0.0,\"Z\":110.0,\"ID\":2,\"Active\":true},\"D\":{\"X\":90.0,\"Y\":0.0,\"Z\":100.0,\"ID\":3,\"Active\":true},\"One\":{\"X\":90.0,\"Y\":0.0,\"Z\":90.0,\"ID\":4,\"Active\":true},\"Two\":{\"X\":110.0,\"Y\":0.0,\"Z\":90.0,\"ID\":5,\"Active\":true},\"Three\":{\"X\":110.0,\"Y\":0.0,\"Z\":110.0,\"ID\":6,\"Active\":true},\"Four\":{\"X\":90.0,\"Y\":0.0,\"Z\":110.0,\"ID\":7,\"Active\":true}}",
+      "Braindead Aetherletting": "{\"Name\":\"M9S (Braindead Aetherletting)\",\"MapID\":1069,\"A\":{\"X\":92.538,\"Y\":0.0,\"Z\":81.984,\"ID\":0,\"Active\":true},\"B\":{\"X\":118.016,\"Y\":0.0,\"Z\":92.538,\"ID\":1,\"Active\":true},\"C\":{\"X\":107.462,\"Y\":0.0,\"Z\":118.016,\"ID\":2,\"Active\":true},\"D\":{\"X\":81.984,\"Y\":0.0,\"Z\":107.462,\"ID\":3,\"Active\":true},\"One\":{\"X\":81.984,\"Y\":0.0,\"Z\":92.538,\"ID\":4,\"Active\":true},\"Two\":{\"X\":107.462,\"Y\":0.0,\"Z\":81.984,\"ID\":5,\"Active\":true},\"Three\":{\"X\":118.016,\"Y\":0.0,\"Z\":107.462,\"ID\":6,\"Active\":true},\"Four\":{\"X\":92.538,\"Y\":0.0,\"Z\":118.016,\"ID\":7,\"Active\":true}}"
+    },
+    "notes": "If the boss hits you with mechanics that you're not meant to be hit by, she will gain stacks, increase the damage and size of certain abilities. Clear: https://www.youtube.com/watch?v=ZsAdviedIT4"
+  },
+
+  "mechanics": [
+    {
+      "id": "Killer-Voice-1",
+      "name": "Killer Voice",
+      "category": "Raidwide Damage",
+      "timestamp": "0:05",
+      "description": "Raidwide Damage",
+      "damage": "~100k"
+    },
+
+    {
+      "id": "Hardcore-1",
+      "name": "Hardcore",
+      "category": "Tank Buster",
+      "timestamp": "0:15",
+      "damage": "~220k",
+      "description": "Tank Busters on top 2 aggro.  AoE on the person hit. ~??? Damage.",
+      "positions": {
+        "MT": "Northwest",
+        "OT": "Northeast",
+        "Party": "South"
+      },
+      "images":[
+        "../images/m9s/small_buster.png"
+      ],
+      "warning": "Make sure to establish aggro during the opener.",
+      "notes": "The size of the AoE will grow with the number of stacks."
+    },
+
+    {
+      "id": "Vamp-Stomp-1",
+      "name": "Vamp Stomp",
+      "category": "Spread Mechanic",
+      "timestamp": "0:26",
+      "description": "All players get a debuff.  Need to cleanse the debuff by walking into a ring expanding from the boss.  When players touch the ring, they get hit by and AoE, causing magic vuln to player hit and nearby plaeyrs.",
+      "video": "https://www.twitch.tv/rukaharu_kamo/clip/TenderSweetLyrebirdShadyLulu-43dUyndtpFqJhawZ",
+      "steps": [
+        "Spread into clock spots",
+        {
+          "text": "First Cleanse",
+          "substeps": [
+            "Tanks rotate to where bats first spawn.",
+            "Melee's rotate to be 90 degrees to tank.  Be at the edge as to not get hit by first bat.",
+            "Tanks get hit by the ring at the same time as the bats.  Then walk into the middle of the arena."
+          ]
+        },
+        {
+          "text": "First Cleanse (Alternative)",
+          "substeps":[
+            "Everyone just stick to your clockspot.  If bat is exploding in yourclockspot then walk back.",
+            "After first bat explosion, MT/OT/D1/D2 all walk to centre of the arena, exploding as you do."
+          ]
+        },
+        {
+          "text": "Second Cleanse",
+          "substeps": [
+            "After first bat explosions, melee walk in to cleanse.",
+            "Melee walk under the boss."
+          ]
+        },
+        {
+          "text": "Third Cleanse",
+          "substeps": [
+            "Ranged cleanse when possible.  Just be careful of the bats and meet back in the middle."
+          ]
+        }
+      ],
+      "positions": {
+        "MT": "North",
+        "ST": "South",
+        "H1": "Southwest",
+        "H2": "Southwest",
+        "D1": "West",
+        "D2": "East",
+        "D3": "Northwest",
+        "D4": "Northeast"
+      },
+      "tips": [
+        "Just eat the downtime here.  It sucks.  But so easy to clip others when cleansing.",
+        "Fast MT pop option, then OT/D1/D2 all pop after 1st bat: https://www.twitch.tv/caelocus/clip/CaringFurryLorisOMGScoots-QiwXriI4lE_CibTv",
+        "All melee pop at the same time option: https://youtube.com/clip/UgkxVRosORmnzDomf5j7wT4RNeBvWTcgflDl?si=_xPP_RNC71duepJw"
+      ]
+    },
+
+    {
+      "id": "Brutal-Rain-1",
+      "name": "Brutal Rain",
+      "category": "Multihit Stack AoE",
+      "timestamp": "0:42",
+      "description": "3 hit stack AoE."
+    },
+
+    {
+      "id": "Sadistic-Screech-1",
+      "name": "Sadistic Screech",
+      "category": "Arena Change",
+      "timestamp": "0:55",
+      "description": "Raidwide AoE damage + Arena change"
+    },
+
+    {
+      "id": "Coffinmaker-1",
+      "name": "Coffinmaker",
+      "category": "DPS Rush",
+      "timestamp": "1:09",
+      "description": "Series of front/back dodges while dodging the saws moving forward.  This phase is a dps check.",
+      "video": "https://www.twitch.tv/caelocus/clip/HandsomeFurryPeppermintWoofer-CVGNyTMYLZYMNbNe",
+      "steps": [
+        {
+          "text": "Set 1",
+          "substeps": [
+            "Look at the saws.  2 will glow blow.  Need to be in the two spots that don't glow blue first",
+            "During this, look at the boss on the left.  They will either hit in front of the line they are in, or behind.",
+            "Dodge front/back with the first two saws, then opposite with the second two saws."
+          ]
+        },
+        {
+          "text": "Set 2",
+          "substeps": [
+            "Saws do the same thing",
+            "Boss is on the right this time.  Does the same thing.",
+            "Dodge front/back with the first two saws, then opposite with the second two saws."
+          ]
+        },
+        {
+          "text": "Set 3",
+          "substeps": [
+            "Saws do the same thing",
+            "Boss is behind this time.  Does the same thing.",
+            "Dodge left/right with the first two saws, then opposite with the second two saws.",
+            "Repeat this set again."
+          ]
+        }
+      ],
+      "warning": "Enrage will begin if not dead by 2:07"
+    },
+
+    {
+      "id": "Sadistic-Screech-2",
+      "name": "Sadistic Screech",
+      "category": "Arena Change",
+      "timestamp": "2:13",
+      "description": "Raidwide AoE damage + Arena change",
+      "notes": "Boss will jump middle afterwards."
+    },
+
+    {
+      "id": "Crowd-Kill-1",
+      "name": "Crowd Kill",
+      "category": "Raidwide Damage",
+      "timestamp": "2:28",
+      "description": "Raidwide damage to party and boss gains 4 stacks of its buff",
+      "tips": [
+        "Boss should now be on 4 stacks if somethng hasn't gone wrong"
+      ]
+    },
+
+    {
+      "id": "Finale-Fatale-1",
+      "name": "Finale Fatale",
+      "category": "Raidwide Damage",
+      "timestamp": "2:36",
+      "description": "Raidwide damage with some AoE's spawning on the floor."
+    },
+
+    {
+      "id": "Aetherletting-1",
+      "name": "Aetherletting (Default)",
+      "category": "Mario Kart",
+      "timestamp": "2:58",
+      "description": "Dropping +'s and x's while rotating around the arena.",
+      "video": "https://www.twitch.tv/caelocus/clip/BoldMagnificentAlpacaKappaRoss-v0vGVW1vWj1yz6SC",
+      "steps": [
+        "Supports start west (G1), dps start east (G2).",
+        "Pizza slices will start spawning on the floor, opposite each other.",
+        {
+          "text": "Pizza Slice 1",
+          "substeps": [
+            "G1 will drop their first marker in the pizza slice from SW to N.",
+            "G2 will drop their first marker in the pizza slice from NE to S.",
+            "Both groups move next to their first slice.",
+            "Players will start getting marked, one support and dps at a time.  Remember your number for which slice you need to drop in.",
+            "As first slice goes off, player with first marker move inot the slice and to the wall to drop marker.  Afterwards continue to follow your group around."
+          ]
+        },
+        {
+          "text": "Pizza Slice 2-4",
+          "substeps": [
+            "Repeat same as pizza slice 1, dropping your marker at the wall.",
+            "After you drop your marker, move back to the middle and prepare to dodge dropped puddles."
+          ]
+        },
+        {
+          "text": "Dodging +'s and x's",
+          "substeps": [
+            "Starting with the first drops, the puddles will turn into +'s or x's.",
+            "Dodge these line AoE's around the middle"
+          ]
+        }
+      ],
+      "positions": {
+        "G1": "West",
+        "G2": "East"
+      },
+      "tips":[
+        "As soon as you get marked you can start moving out."
+      ],
+      "warning": "Dropping two markers on top of each other will detonate the markers, killing players."
+    },
+
+        {
+      "id": "Aetherletting-2",
+      "name": "Aetherletting (Braindead)",
+      "category": "Mario Kart",
+      "timestamp": "2:58",
+      "description": "Dropping +'s and x's in fixed positions at waymarks.  This will lead to increased downtime but less thinking.",
+      "video": "https://www.youtube.com/clip/Ugkx56Y5tdAxv4ZVlvGrtULLugZDG3BmzbYm",
+      "steps": [
+        "All players begin in positions shown below.",
+        "Pizza slices will start spawning on the floor, opposite each other.",
+        "Move out to your waymark and drop your marker on the way mark.  This should be as close as possible to between the two pizza slices.",
+        "After dropping your marker, be dead centre under the boss as the safe spot is very small."
+      ],
+      "positions": {
+        "MT": "North-Northwest",
+        "OT": "North-Northeast",
+        "H1": "West-Northwest",
+        "H2": "East-Northeast",
+        "D1": "South-Southwest",
+        "D2": "South-Southeast",
+        "D3": "West-Southwest",
+        "D4": "East-Southeast"
+      },
+      "images": [
+        "../images/m9s/braindead_aetherletting.png"
+      ],
+      "notes": "Playing it less safe: https://youtube.com/clip/UgkxQ1NBZYcnJfoLYnRHC1bcXB42cX0eY4h3?si=7rRbIE2rBBkcbWqy"
+    },
+
+    {
+      "id": "Hardcore-2",
+      "name": "Hardcore",
+      "category": "Tank Buster",
+      "timestamp": "3:36",
+      "description": "Tank Busters on top 2 aggro.  AoE on the person hit.",
+      "positions": {
+        "MT": "Northeast",
+        "OT": "Northwest",
+        "Party": "South"
+      },
+      "warning": "AoEs will be slightly larger than the first time.  Maybe a lot larger if you have a lot of stacks.",
+      "notes": "The size of the AoE will grow with the number of stacks."
+    },
+
+    {
+      "id": "Vamp-Stomp-2",
+      "name": "Vamp Stomp",
+      "category": "Spread Mechanic",
+      "timestamp": "3:46",
+      "description": "All players get a debuff.  Need to cleanse the debuff by walking into a ring expanding from the boss.  When players touch the ring, they get hit by and AoE, causing magic vuln to player hit and nearby plaeyrs.",
+      "video": "https://www.twitch.tv/rukaharu_kamo/clip/TenderSweetLyrebirdShadyLulu-43dUyndtpFqJhawZ",
+      "steps": [
+        "Spread into clock spots",
+        {
+          "text": "First Cleanse",
+          "substeps": [
+            "Tanks rotate to where bats first spawn.",
+            "Melee's rotate to be 90 degrees to tank.  Be at the edge as to not get hit by first bat.",
+            "Tanks get hit by the ring at the same time as the bats.  Then walk into the middle of the arena."
+          ]
+        },
+        {
+          "text": "First Cleanse (Alternative)",
+          "substeps":[
+            "Everyone just stick to your clockspot.  If bat is exploding in yourclockspot then walk back.",
+            "After first bat explosion, MT/OT/D1/D2 all walk to centre of the arena, exploding as you do."
+          ]
+        },
+        {
+          "text": "Second Cleanse",
+          "substeps": [
+            "After first bat explosions, melee walk in to cleanse.",
+            "Melee walk under the boss."
+          ]
+        },
+        {
+          "text": "Third Cleanse",
+          "substeps": [
+            "Ranged cleanse when possible.  Just be careful of the bats and meet back in the middle."
+          ]
+        }
+      ],
+      "positions": {
+        "MT": "North",
+        "ST": "South",
+        "H1": "Southwest",
+        "H2": "Southwest",
+        "D1": "West",
+        "D2": "East",
+        "D3": "Northwest",
+        "D4": "Northeast"
+      },
+      "tips": [
+        "Just eat the downtime here.  It sucks.  But so easy to clip others when cleansing.",
+        "Fast MT pop option, then OT/D1/D2 all pop after 1st bat: https://www.twitch.tv/caelocus/clip/CaringFurryLorisOMGScoots-QiwXriI4lE_CibTv",
+        "All melee pop at the same time option: https://youtube.com/clip/UgkxVRosORmnzDomf5j7wT4RNeBvWTcgflDl?si=_xPP_RNC71duepJw"
+      ],
+      "warning": "Keep the boss facing north hear after tank resolves to prepare for Half Moon"
+    },
+
+    {
+      "id": "Half-Moon-1",
+      "name": "Half Moon",
+      "category": "Half Arena Cleave",
+      "timestamp": "4:05",
+      "description": "Half Arena cleave.  Just be on the same side as the boss/opposite the ball",
+      "images": [
+        "../images/m9s/small_half_moon.png"
+      ],
+      "warning": "If boss has fewer than 8 stacks, then it will just be half the arena under the boss. If the boss has 8 or more stacks, then the 'half' arena will start from the edge of the bosses hitbox"
+    },
+
+    {
+      "id": "Brutal-Rain-2",
+      "name": "Brutal Rain",
+      "category": "Multihit Stack AoE",
+      "timestamp": "4:12",
+      "description": "4 hit stack AoE."
+    },
+
+    {
+      "id": "Insatiable-Thirst-1",
+      "name": "Insatiable Thirst",
+      "category": "Raidwide Damage",
+      "timestamp": "4:25",
+      "description": "Raidwide Damage",
+      "notes": "Boss will jump middle afterwards."
+    },
+
+    {
+      "id": "Sadistic-Screech-3",
+      "name": "Sadistic Screech",
+      "category": "Arena Change",
+      "timestamp": "4:38",
+      "description": "Raidwide AoE damage + Arena change"
+    },
+
+    {
+      "id": "Coffinmaker-2",
+      "name": "Coffinmaker 2",
+      "category": "DPS Rush",
+      "timestamp": "4:50",
+      "description": "Tank towers and dps checks.",
+      "video": "https://youtube.com/clip/UgkxGjNvu_tbgpBpRmInw7MNBK4v1B3ANwGi?si=DLiPlvvRM3txxPhM",
+      "steps": [
+        {
+          "text": "Set 1",
+          "substeps": [
+            "Two tank towers and 1 red circle will spawn.  One tower will be North, one south, with one close and one far.  Red circle will be in one of the 4 middle squares as well.",
+            "MT get the North tower, OT get the South tower.  When towers hit then a flail will spawn.",
+            "MT/D1 kill the Flail that spawns North.  OT/D2 kill the flail that spawns South.  Ranged focus the tower that spawns in the red AoE.  Melee's be careful and do as much as you can in the short time you can hit it.",
+            "Killer Voice (From Boss) - Raidwide Damage."
+          ]
+        },
+        {
+          "text": "Set 2",
+          "substeps": [
+            "Same things with towers and red circle",
+            "Killer Voice (From Boss) - Raidwide Damage."
+          ]
+        },
+        {
+          "text": "Set 3",
+          "substeps": [
+            "Same thing with towers and red circle.  Red circle will be on the outside this time"
+          ]
+        }
+      ],
+      "warning": "Careful of all the rotating saws during this phase"
+    },
+
+        {
+      "id": "Sadistic-Screech-4",
+      "name": "Sadistic Screech",
+      "category": "Arena Change",
+      "timestamp": "5:51",
+      "description": "Raidwide AoE damage + Arena change"
+    },
+
+    {
+      "id": "Crowd-Kill-2",
+      "name": "Crowd Kill",
+      "category": "Raidwide Damage",
+      "timestamp": "6:05",
+      "description": "Raidwide damage to party and boss gains 4 stacks of its buff",
+      "tips": [
+        "Boss should now be on 8 stacks if somethng hasn't gone wrong"
+      ]
+    },
+    {
+      "id": "Finale-Fatale-2",
+      "name": "Finale Fatale",
+      "category": "Raidwide Damage",
+      "timestamp": "6:23",
+      "description": "Raidwide damage with some AoE's spawning on the floor."
+    },
+
+    {
+      "id": "Hell-In-A-Cell",
+      "name": "Hell in a Cell",
+      "category": "ADS Phase",
+      "timestamp": "6:35",
+      "description": "First set of towers taken by Group 1, while Group 2 deals with boss mechanic.  Then swap for second set of towers.",
+      "video": "https://youtube.com/clip/UgkxR2qtyetMCGOTyoqTfe2ap_EcfO6VfaSc?si=D2BMXjVvtiFvrkDM",
+      "steps": [
+        {
+          "text": "Set 1",
+          "substeps": [
+            "Group 1 are getting first set of towers.  Clockwise from North (12 O'Clock): MT/D1/D3/H2",
+            "After taking your tower, you will be trapped and need to kill an a target that spawns in your tower.",
+            "Boss will cast either Ultrasonic Amp or Ultrasonic Spread.",
+            "If Amp, then Group 2 stack close to the boss, in the largest gap between towers.",
+            "If Spread then Group 2 spread around the boss, being careful not to bait your cone AoE at any of the towers.  Tank take the large gap between towers, this is relative north.  From here, DPS go together in the first gap clockwise, then Healer take the next gap.",
+            "Repeat for opposite of Amp/Spread that you just did.  Those killing your tower be careful not to run in too quickly"
+          ]
+        },
+        {
+          "text": "Set 2",
+          "substeps": [
+            "Repeat Set 1 but swap groups.  So Group 2 in towers, Group 1 dealing with boss mechs.",
+            "North (12 O'Clock): OT/D2/D4/H2 for towers.  Tank is relative North for spread." 
+          ]
+        }
+      ],
+      "tips": [
+        "Those not in towers can pre-position with tank at relative North in the big gap.  If Amp then go stack on tank, if spread then just stay in your spot."
+      ],
+      "images": [
+        "../images/m9s/hell-in-a-cell.png"
+      ]
+    },
+
+    {
+      "id": "Undead-Deathmatch-1",
+      "name": "Undead Deathmatch",
+      "category": "ADS Phase",
+      "timestamp": "7:29",
+      "description": "Towers spawn East/West.  Taken in Groups then chained to the bat that spawns in the tower.  Need to follow the bat around the arena as it rotates, while dodging boss mechs.",
+      "video": "https://youtube.com/clip/Ugkx4ePxFLyUEsohp3ustaWau4gLH_n49HB6?si=4_eOXvGvlHDO5Add",
+      "steps": [
+        "Group 1 take West tower, Group 2 take East tower",
+        "After tower hits, you will be chained to a bat that spawns in that tower. Don't get too far from your bat. Be on the edge of the bosses hitbox to start.",
+        {
+          "text": "Boss will perform one of Sanguine Scratch:",
+          "substeps": [
+            "Pizza slices out from boss.  These will repeat and you continually move into where just got hit while following the bat clockwise/counter-clockwise. 5 hits.",
+            ""
+          ]
+        },
+        {
+          "text": "Bat Mech",
+          "substeps": [
+            "Donut above bat: Donut AoE on the bat, move under the bat to be safe.",
+            "Circle above bat: AoE on the bat, move to the edge of the bosses hitbox to be safe",
+            "Bat will stop during its mech and potentially pick a new direction to rotate to."
+          ]
+        },
+        "Boss performs another mech while you follow the bat."
+      ],
+      "images":[
+        "../images/m9s/dynamo.png",
+        "../images/m9s/chariot.png"
+      ]
+    },
+
+    {
+      "id": "Brutal-Rain-3",
+      "name": "Brutal Rain",
+      "category": "Multihit Stack AoE",
+      "timestamp": "8:14",
+      "description": "5 hit stack AoE."
+    },
+
+    {
+      "id": "Vamp-Stomp-3",
+      "name": "Vamp Stomp",
+      "category": "Spread Mechanic",
+      "timestamp": "3:46",
+      "description": "All players get a debuff.  Need to cleanse the debuff by walking into a ring expanding from the boss.  When players touch the ring, they get hit by and AoE, causing magic vuln to player hit and nearby plaeyrs.",
+      "video": "https://www.twitch.tv/rukaharu_kamo/clip/TenderSweetLyrebirdShadyLulu-43dUyndtpFqJhawZ",
+      "steps": [
+        "Spread into clock spots",
+        {
+          "text": "First Cleanse",
+          "substeps": [
+            "Tanks rotate to where bats first spawn.",
+            "Melee's rotate to be 90 degrees to tank.  Be at the edge as to not get hit by first bat.",
+            "Tanks get hit by the ring at the same time as the bats.  Then walk into the middle of the arena."
+          ]
+        },
+        {
+          "text": "First Cleanse (Alternative)",
+          "substeps":[
+            "Everyone just stick to your clockspot.  If bat is exploding in yourclockspot then walk back.",
+            "After first bat explosion, MT/OT/D1/D2 all walk to centre of the arena, exploding as you do."
+          ]
+        },
+        {
+          "text": "Second Cleanse",
+          "substeps": [
+            "After first bat explosions, melee walk in to cleanse.",
+            "Melee walk under the boss."
+          ]
+        },
+        {
+          "text": "Third Cleanse",
+          "substeps": [
+            "Ranged cleanse when possible.  Just be careful of the bats and meet back in the middle."
+          ]
+        }
+      ],
+      "positions": {
+        "MT": "North",
+        "ST": "South",
+        "H1": "Southwest",
+        "H2": "Southwest",
+        "D1": "West",
+        "D2": "East",
+        "D3": "Northwest",
+        "D4": "Northeast"
+      },
+      "tips": [
+        "Just eat the downtime here.  It sucks.  But so easy to clip others when cleansing.",
+        "Fast MT pop option, then OT/D1/D2 all pop after 1st bat: https://www.twitch.tv/caelocus/clip/CaringFurryLorisOMGScoots-QiwXriI4lE_CibTv",
+        "All melee pop at the same time option: https://youtube.com/clip/UgkxVRosORmnzDomf5j7wT4RNeBvWTcgflDl?si=_xPP_RNC71duepJw"
+      ],
+      "warning": "Keep the boss facing north hear after tank resolves to prepare for Half Moon"
+    },
+
+
+    {
+      "id": "Half-Moon-2",
+      "name": "Half Moon",
+      "category": "Half Arena Cleave",
+      "timestamp": "8:43",
+      "description": "Half Arena cleave. Extends to edge of the bosses hitbox this time.  Can be max melee to be safe. Just be on the same side as the boss/opposite the ball",
+      "images": [
+        "../images/m9s/big_half_moon.png"
+      ]
+    },
+
+    {
+      "id": "Hardcore-3",
+      "name": "Hardcore",
+      "category": "Tank Buster",
+      "timestamp": "8:53",
+      "description": "Tank Busters on top 2 aggro.  AoE on the person hit.",
+      "positions": {
+        "MT": "Northeast",
+        "OT": "Northwest",
+        "Party": "South"
+      },
+      "warning": "AoEs will be really big. Tanks be at the edge of the arena"
+    },
+
+    {
+      "id": "Sanguine-Scratch-1",
+      "name": "Sanguine Scratch",
+      "category": "Pizza Slices",
+      "timestamp": "9:07",
+      "description": "5 sets of pizza slices from the boss, just dodge into the one previous set after it hits."
+    },
+
+    {
+      "id": "Insatiable-Thirst-2",
+      "name": "Insatiable Thirst",
+      "category": "Raidwide Damage",
+      "timestamp": "9:25",
+      "description": "Raidwide Damage"
+    },
+
+    {
+      "id": "Crowd-Kill-3",
+      "name": "Crowd Kill",
+      "category": "Raidwide Damage",
+      "timestamp": "9:40",
+      "description": "Raidwide damage to party and boss gains maximum stacks of its buff",
+      "warning": "This is last mechanic before enrage.  Use the last of your mits."
+    },
+
+    {
+      "id": "Enrage",
+      "name": "Enrage",
+      "category": "Enrage",
+      "timestamp": "???"
+    }
+  ]
+}
