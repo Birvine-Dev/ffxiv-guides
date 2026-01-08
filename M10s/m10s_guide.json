@@ -248,7 +248,6 @@
         "Deep Blue: https://youtube.com/clip/UgkxETW8teLQb0-5FTodStjLEqkVn4OVbgwG?si=lQzDmXFL3SnWtmCI",
         "Red Hot: https://youtube.com/clip/UgkxDZfwknzJzkBQd07Ty1QMsURRnC_RgHSt?si=j-b-GMxdVX4hNVDP"
       ],
-      "warning": "Don't clip any of the fire puddles with water or it will be death.",
       "notes": "Pull bosses middle afterwards for cleave."
     },
 
@@ -512,7 +511,7 @@
         {
           "text": "Surfboard Sideways",
           "substeps": [
-            "Cone Tankbuster on the closest target.",
+            "Cone Stack on the closest target.",
             "Point it at the wall as much as possible.  Don't have clip any fire with water."
           ]
         }
@@ -522,8 +521,7 @@
         "Deep Blue: https://youtube.com/clip/UgkxETW8teLQb0-5FTodStjLEqkVn4OVbgwG?si=lQzDmXFL3SnWtmCI",
         "Red Hot: https://youtube.com/clip/UgkxDZfwknzJzkBQd07Ty1QMsURRnC_RgHSt?si=j-b-GMxdVX4hNVDP"
       ],
-      "warning": "Don't clip any of the fire puddles with water or it will be death.",
-      "notes": "Pull bosses middle afterwards for cleave."
+      "warning": "Be aware of Surfboard Sideways now being taken by the full group instead of just the tank."
     },
 
     {
