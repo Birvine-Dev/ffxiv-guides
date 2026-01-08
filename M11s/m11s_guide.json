@@ -1,0 +1,590 @@
+{
+  "raidName": "M11S - The Tyrant",
+  "tier": "Savage",
+  "patch": "Dawntrail 7.4",
+
+  "defaults": {
+    "macro": "???",
+    "waymarks": {},
+    "notes": ""
+  },
+
+  "mechanics": [
+    {
+      "id": "Crown-of-Arcadia",
+      "name": "Crown of Arcadia",
+      "category": "Raidwide Damage",
+      "timestamp": "0:06",
+      "description": "Raidwide Damage.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Raw-Steel-Trophy",
+      "name": "Raw Steel Trophy",
+      "category": "Weapon",
+      "timestamp": "0:16",
+      "description": "Boss draws one of two weapons: Scythe or Axe",
+      "steps":[
+        {
+            "text": "Scythe",
+            "substeps":[
+                "MT Northwest.",
+                "OT Northeast.",
+                "Party stacked South."
+            ]
+        },
+        {
+            "text": "Axe",
+            "substeps":[
+                "Tanks stack together North.",
+                "Party spread around the boss."
+            ]
+        }
+      ],
+      "images":[
+        "../images/m11s/axe.png"
+      ]
+    },
+
+    {
+      "id": "Trophy-Weapons",
+      "name": "Trophy Weapons + Assault Evovled",
+      "category": "Weapon 2",
+      "timestamp": "0:35",
+      "description": "One of each of the three weapons will spawn around the arena. Scythe, Axe and Sword. Boss will turn towards one of the weapons.",
+      "steps":[
+        "Boss will rotate clockwise after each weapon",
+        {
+            "text": "Scythe",
+            "substeps":[
+                "Donut AoE on the weapon.",
+                "Spread into clockspots, relative to boss facing."
+            ]
+        },
+                {
+            "text": "Axe",
+            "substeps":[
+                "Circle AoE on the weapon.",
+                "Party stack together just behind the boss."
+            ]
+        },
+                {
+            "text": "Sword",
+            "substeps":[
+                "+ AoE from the weapon, same direction boss is facing.",
+                "Treat boss/weapon as North.  Split into light parties, G1 left, G2 right."
+            ]
+        }
+      ],
+      "positions":{
+        "MT":"North",
+        "OT":"South",
+        "H1":"Southwest",
+        "H2":"Southeast",
+        "D1":"West",
+        "D2":"East",
+        "D3":"Northwest",
+        "D4":"Northeast",
+        "G1":"Southwest",
+        "G2":"Southeast"
+      }
+    },
+
+    {
+      "id": "Trophy-Weapons-2",
+      "name": "Trophy Weapons + Void Stardust",
+      "category": "Weapon 2",
+      "timestamp": "1:10",
+      "description": "Same as previous weapons but need to bait three ground AoEs + a stack/spread before doing the weapons. Will repeat the three baited ground AoEs + the opposite stack/spread at the end.",
+      "video": "https://youtube.com/clip/Ugkx7EAX6ePiR4t78PgudwqAC5ylND6ramG1?si=3ZRn2gkyBgb9aI9I",
+      "steps":[
+        "Party stack South of the boss, including MT.  MT can move as soon as the boss casts trophy weapon.",
+        "Drop 3 AoE's rotating clockwise around the boss.",
+        "After third AoE, either spread into clockspots if spread markers, or into the middle for the stack marker.  Time to move into your clockspot after the third AoE hits so don't be scared if your spot is covered.",
+        "Boss will look at a weapon just before third AoE hits.",
+        "Boss will rotate clockwise after each weapon",
+        {
+            "text": "Scythe",
+            "substeps":[
+                "Donut AoE on the weapon.",
+                "Spread into clockspots, relative to boss facing."
+            ]
+        },
+                {
+            "text": "Axe",
+            "substeps":[
+                "Circle AoE on the weapon.",
+                "Party stack together just behind the boss."
+            ]
+        },
+                {
+            "text": "Sword",
+            "substeps":[
+                "+ AoE from the weapon, same direction boss is facing.",
+                "Treat boss/weapon as North.  Split into light parties, G1 left, G2 right."
+            ]
+        },
+        "After weapons repeat the 3 baited AoEs + stack/spread (whichever didn't happen the first time)."
+      ],
+      "positions":{
+        "MT":"North",
+        "OT":"South",
+        "H1":"Southwest",
+        "H2":"Southeast",
+        "D1":"West",
+        "D2":"East",
+        "D3":"Northwest",
+        "D4":"Northeast",
+        "G1":"Southwest",
+        "G2":"Southeast"
+      }
+    },
+
+    {
+      "id": "Crown-of-Arcadia-2",
+      "name": "Crown of Arcadia",
+      "category": "Raidwide Damage",
+      "timestamp": "1:58",
+      "description": "Raidwide Damage.",
+      "damage": "???",
+      "notes": "Boss will jump middle after."
+    },
+
+    {
+      "id": "Dance-of-Domination-Trophy",
+      "name": "Dance of Domination Trophy",
+      "category": "Pair Stacks",
+      "timestamp": "2:13",
+      "description": "Boss will hit the party with a couple of raid wide hits and create alines on the floor.  Need to find the safe spot for your pair.",
+      "steps":[
+        {
+            "text": "Melee",
+            "substeps":[
+                "There will be two melee safe spots opposite each other.",
+                "Look for a vertical or horizontal line through the boss.",
+                "If vertical then the safespots will be West and East.  MT/D1 West.  OT/D2 East.",
+                "If horizontal then safespots will be North and South.  MT/D1 North. OT/D2 South.",
+                "Video: https://youtube.com/clip/UgkxVZATv3WG7sMzPQgilBNf4SZxfwwyMz_P?si=hvXC0iuh-lugNGCo"
+            ]
+        },
+        {
+            "text": "Ranged",
+            "substeps":[
+                "Look for the edge of the arena that doesn't have a line across it.  Only once saide will be safe.",
+                "If the safe side is West or East, then H1/D3 take the North safespot, H2/D4 take the South safespot.",
+                "If the safe side is North or South, then H1/D3 take the West safespot, H2/D4 take the East safespot.",
+                "Video: https://youtube.com/clip/UgkxkI-QzdNAVmbmCQCicfXqlUKb0Qkwu3-L?si=mZIG94JjugiHLwvV"
+            ]
+        }
+      ]
+    },
+
+    {
+      "id": "Raw-Steel-Trophy",
+      "name": "Raw Steel Trophy",
+      "category": "Weapon",
+      "timestamp": "2:35",
+      "description": "Boss draws one of two weapons: Scythe or Axe",
+      "steps":[
+        {
+            "text": "Scythe",
+            "substeps":[
+                "MT Northwest.",
+                "OT Northeast.",
+                "Party stacked South."
+            ]
+        },
+        {
+            "text": "Axe",
+            "substeps":[
+                "Tanks stack together North.",
+                "Party spread around the boss."
+            ]
+        }
+      ],
+      "images":[
+        "../images/m11s/axe.png"
+      ]
+    },
+
+    {
+      "id": "Charybdistopia",
+      "name": "Charybdistopia",
+      "category": "1 HP",
+      "timestamp": "3:04",
+      "description": "Sets the party to 1 HP"
+    },
+
+    {
+      "id": "Ultimate-Trophy-Weapons",
+      "name": "Ultimate Trophy Weapons",
+      "category": "Weapon 3",
+      "timestamp": "3:14",
+      "description": "Boss will spawn 6 weapons, one at a time, doing normally mechanics with them.",
+      "video": "https://youtube.com/clip/UgkxVLqNQ53QzjAMnt98reKgPU4k01RjZ8dO?si=P_bK5ruaYettPU0b",
+      "steps":[
+        {
+            "text": "Scythe",
+            "substeps":[
+                "Donut AoE on the weapon.",
+                "Spread into clockspots, relative to boss facing."
+            ]
+        },
+                {
+            "text": "Axe",
+            "substeps":[
+                "Circle AoE on the weapon.",
+                "Party stack together just behind the boss."
+            ]
+        },
+                {
+            "text": "Sword",
+            "substeps":[
+                "+ AoE from the weapon, same direction boss is facing.",
+                "Treat boss/weapon as North.  Split into light parties, G1 left, G2 right."
+            ]
+        },
+        "For the last 4 weapons, he will leave behind a tornado. These will shoot a cones on the two closest players.",
+        "All players rotate clockwise from your clockspot to find your bait spot.  Try to point it at the closest edge to avoid clipping others."
+      ],
+      "positions":{
+        "MT":"North",
+        "OT":"South",
+        "H1":"Southwest",
+        "H2":"Southeast",
+        "D1":"West",
+        "D2":"East",
+        "D3":"Northwest",
+        "D4":"Northeast",
+        "G1":"Southwest",
+        "G2":"Southeast"
+      }
+    },
+
+    {
+      "id": "One-and-Only",
+      "name": "One and Only",
+      "category": "Transition",
+      "timestamp": "4:02",
+      "description": "Raidwide Damage.",
+      "damage":"???",
+      "notes": "Pull boss to Northwest as soon as possible (if doing Orbital Omen Boss Edge, otherwise keep middle)."
+    },
+
+    {
+      "id": "Great-Wall-of-Fire",
+      "name": "Great Wall of Fire",
+      "category": "Tankbuster",
+      "timestamp": "4:18",
+      "description": "Line tank buster for both tanks.  Front tank gets hit with a fire vuln so need to swap positions between each hit. Also leaves an line AoE on the ground which you need to move out of.  Just move left facing the boss after the first hit.",
+      "damage": "???",
+      "notes": "Can just invuln.  Keep pulling Northwest if needed and then face its so its side as at the corner, see video in Orbital Omen (Boss Edge) for example."
+    },
+
+    {
+      "id": "Orbital-Omen",
+      "name": "Orbital Omen + Fire and Fury (Boss Edge)",
+      "category": "Portals",
+      "timestamp": "4:32",
+      "description": "Portals will spawn along 2 edges. Boss will also do a cone in front/behind it.  By facing it the way shown in video, you can effectively ignore the cones.",
+      "steps":[
+        "Portals will create lines straight in front of them which meteors will shoot out of.  Just want to move from one intersection set, to another intersection set."
+      ],
+      "video": "https://youtube.com/clip/Ugkx6xrD9Op7gp3_Fryzu-6p4D3QzdZzojzi?si=RgVezP0GqumwaU-s",
+      "warning": "Main tank at this point may not be able to get to the party to do the same movement as them, depending, on the position.  Just do your best."
+    },
+
+        {
+      "id": "Orbital-Omen-2",
+      "name": "Orbital Omen + Fire and Fury (Boss Middle)",
+      "category": "Portals",
+      "timestamp": "4:32",
+      "description": "Portals will spawn along 2 edges. Boss will also do a cone in front/behind it.  Immediately turn boss so its side is facing the intersection between the two meteors.",
+      "steps":[
+        "Portals will create lines straight in front of them which meteors will shoot out of.  Just want to move from one intersection set, to another intersection set."
+      ],
+      "video": "https://www.twitch.tv/caelocus/clip/ShinyBoxyStapleCmonBruh-nCIFFjagZzIqfKZg",
+      "warning": "This requires tank to be a little more aware/quicker in terms of where they should be facing the boss."
+    },
+
+    {
+      "id": "Meteorain",
+      "name": "Meteorain",
+      "category": "",
+      "timestamp": "4:58",
+      "description": "Closest 2 players will bait a meteor marker.  Rest of the players will deal with differnent mechs each set.",
+      "video":"https://youtube.com/clip/Ugkxh7mxpzBLdVwiRU-eqbLgQ0mQ4fDtKJyN?si=vs7w3dqo0DGD7sCM",
+      "steps":[
+        "We will be building our line Northwest",
+        {
+            "text": "Set 1",
+            "substeps":[
+                "Melee under the boss first, party at Southwest max melee, tanks at the front of the stack.",
+                "After getting your meteor marker, D1 goes Northwest, D2 go Southeast. Both just outside bosses hitbox.",
+                "Meteors will drop and stack will get hit with a line.",
+                "As soon as line hits, Healers under the boss, tanks preparing for tank tethers."
+            ]
+        },
+        {
+            "text": "Set 2",
+            "substeps":[
+                "Healers under the boss to get meteor markers.",
+                "MT pick up the tether from the portal N>W>S. OT pick up the tether from the portal E>S>W. Uptime the boss if you can, otherwise just step towards your portal to avoid the group",
+                "All dps move behind the meteor in the Southeast (dropped by D2 before) for the line stack.",
+                "H1 dropping your meteor halfway between the boss and Northwest corner.  H2 dropping your meteor Southwest just outside bosses hitbox."
+            ]
+        },
+        {
+            "text": "Set 3",
+            "substeps":[
+                "Ranged under the boss to get meteor markers.",
+                "MT pick up the tether from the portal N>W>S. OT pick up the tether from the portal E>S>W. Uptime the boss if you can, otherwise just step towards your portal to avoid the group",
+                "H1/H2/D1/D2 move behind the meteor in the Southwest (dropped by H2 before) for the line stack.",
+                "D3 dropping your meteor a bit inside the edge at the Northwest corner.  D4 dropping your meteor Southeast just outside bosses hitbox."
+            ]
+        },
+        {
+            "text": "Set 4",
+            "substeps":[
+                "MT pick up the tether from the portal N>W>S. OT pick up the tether from the portal E>S>W. Uptime the boss if you can, otherwise just step towards your portal to avoid the group",
+                "Party move behind the meteor in the Southeast (dropped by D4 before) for the line stack."
+            ]
+        },
+        {
+            "text": "Set 5",
+            "substeps":[
+                "Prepare to run behind furthest meteor in the Northwest.  Melee, roughly the last moment you have to run is when the boss cast gets to the last 'i' in Triple Tyrannhilation.",
+                "Wait behind last meteor until the third hit."
+            ]
+        }
+      ],
+      "warning": "Meteors explode in a large circle AoE when hit so just be careful of that.",
+      "tips":[
+        "Healers can rescue melee/tanks for slightly more uptime if you trust them."
+      ]
+    },
+
+
+    {
+      "id": "Flatliner",
+      "name": "Flatliner",
+      "category": "Arena Split",
+      "timestamp": "6:07",
+      "description": "Boss will split the arena in half.  Group 1 West, Group 2 East.  It will be a knockup/back so just be on the edge of the bosses hitbox on your side.",
+      "notes": "Can be inside the orange if you want."
+    },
+
+    {
+      "id": "Majestic-Meteor",
+      "name": "Majestic Meteor",
+      "category": "Towers, Tethers, and Swaps",
+      "timestamp": "6:22",
+      "description": "4 players will be tethered and 2 towers will spawn on each side.  Main idea is that you need to be on the opposite side of the arena than the portal you are tethered to, while keeping 4 on each side.",
+      "video": "",
+      "steps": [
+        "2 players on each side will be tethered.",
+        "If you are tethered to a portal on your side, you want to get knocked to the otherside, otherwise you want to stay on your half of the arena. No tethers stay on your side of the arena.",
+        {
+            "text": "Set 1",
+            "substeps": [
+                "Tank/Ranged take North Tower, Healer/DPS take South tower.",
+                "Either get knocked across the arena or stay on your side depending on what you need to do.",
+                "Non tethered players go inside the bosses hitbox, either left/right depending on which way you want to go next. Don't worry about roles, just adjust to each other.",
+                "Tethered players want to cross your tethers.  For example if you are tethered to the south tether on the east side, you will eventually want to be ending Northwest, etc.",
+                "There will also be a line from North to South on your platform.  A meteor will run down this line as you resolve tethers/markers so need to be aware if you are ending towards the boss or away from the boss.",
+                "For marked players: If the line is close to the boss and you have the tether portals that are far from each other, you need to do a slightly different movement ahead than all other patterns.",
+                "Once markers appear on the non tethered players heads, everyone on your side group together to bait circle AoEs.",
+                "After first circle appears, looking at the boss, go left/right as determined before.",
+                "After you drop the 3 puddles, tethers on the edge of the arena., marked players between the second and third circle.",
+                "If you have the bad pattern as mentioned above (line close to the boss and split portals), then you need to far from the boss to the edge of the arena, effectively in line where the portals would be if they are close (see image below).",
+                "Good Pattern: https://www.youtube.com/clip/UgkxmexJ5GNuysXyYpnvtjttsvAOYjkJQHK2",
+                "Bad Pattern: https://youtube.com/clip/UgkxBDyBkc6Vt6Eivu10gQRapnrAaWMxr9SD?si=EJipJyEPD1haT3rr"
+            ]
+        },
+        {
+            "text": "Set 2",
+            "substeps": [
+                "Repeat Set 1.  Priorities for towers are if you were on that side when dealing with the first tether/marker.  For example the North tether and Marker person on the West side would get the Northwest Tower."
+            ]
+        },
+        {
+          "text": "5 Hit Stack Marker + Knockback",
+          "substeps": [
+            "Regroup with your side under the boss for the stack marker.",
+            "Towers will appear, 5 hits then you will need to go to the tower that was on your side when you finished Set 2.",
+            "Boss will turn to face one side of the arena and begin casting Arcadion Avalanche.  Need to get knocked to the side he is not facing."
+          ]
+        },
+        {
+          "text": "Post Towers",
+          "substeps": [
+            "Boss will face pick up the platform and face one side of the platform the party is on.",
+            "Need to go to the back corner where he is not facing.",
+            "Video: https://youtube.com/clip/UgkxCI7nsK7kUhd_Ni9kszU9fVc4pcsS7obS?si=EP20xccigT8lRgQi"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "Crown-of-Arcadia-3",
+      "name": "Crown of Arcadia",
+      "category": "Raidwide Damage",
+      "timestamp": "8:06",
+      "description": "Raidwide Damage.",
+      "damage": "???",
+      "notes": "This resets the arena."
+    },
+
+    {
+      "id": "Great-Wall-of-Fire",
+      "name": "Great Wall of Fire",
+      "category": "Tankbuster",
+      "timestamp": "8:17",
+      "description": "Line tank buster for both tanks.  Front tank gets hit with a fire vuln so need to swap positions between each hit. Also leaves an line AoE on the ground which you need to move out of.  Just move left facing the boss after the first hit.",
+      "damage": "???",
+      "notes": "Can just invuln.  Keep pulling Northwest if needed and then face its so its side as at the corner, see video in Orbital Omen (Boss Edge) for example."
+    },
+
+    {
+      "id": "Orbital-Omen",
+      "name": "Orbital Omen + Fire and Fury (Boss Edge)",
+      "category": "Portals",
+      "timestamp": "8:31",
+      "description": "Portals will spawn along 2 edges. Boss will also do a cone in front/behind it.  By facing it the way shown in video, you can effectively ignore the cones.",
+      "steps":[
+        "Portals will create lines straight in front of them which meteors will shoot out of.  Just want to move from one intersection set, to another intersection set."
+      ],
+      "video": "https://youtube.com/clip/Ugkx6xrD9Op7gp3_Fryzu-6p4D3QzdZzojzi?si=RgVezP0GqumwaU-s",
+      "warning": "Main tank at this point may not be able to get to the party to do the same movement as them, depending, on the position.  Just do your best."
+    },
+
+        {
+      "id": "Orbital-Omen-2",
+      "name": "Orbital Omen + Fire and Fury (Boss Middle)",
+      "category": "Portals",
+      "timestamp": "8:31",
+      "description": "Portals will spawn along 2 edges. Boss will also do a cone in front/behind it.  Immediately turn boss so its side is facing the intersection between the two meteors.",
+      "steps":[
+        "Portals will create lines straight in front of them which meteors will shoot out of.  Just want to move from one intersection set, to another intersection set."
+      ],
+      "video": "https://www.twitch.tv/caelocus/clip/ShinyBoxyStapleCmonBruh-nCIFFjagZzIqfKZg",
+      "warning": "This requires tank to be a little more aware/quicker in terms of where they should be facing the boss."
+    },
+
+    {
+      "id": "Crown-of-Arcadia-4",
+      "name": "Crown of Arcadia",
+      "category": "Raidwide Damage",
+      "timestamp": "8:49",
+      "description": "Raidwide Damage.",
+      "damage": "???",
+      "notes": "Boss jumps middle after. Setup positions for next mechanic.  Tank/Melee under boss.  Healers North, Ranged South"
+    },
+
+    {
+      "id": "Ecliptic-Stampede",
+      "name": "Ecliptic Stampede",
+      "category": "Overlaps, the Mechanic",
+      "timestamp": "9:01",
+      "description": "One healer and one ranged will be marked with a red circle above their head. Two proximity AoEs will also spawn either NW/SE or NE/SW.",
+      "video": "",
+      "steps": [
+        "Healer/Ranged that doesn't get selected join the party in the middle under the boss.  Healer that was selected go to safe corner on North side, Ranged that was selected go to safe corner on South side.",
+        "Healer/Ranged be a bit inside North/South of the corner to leave the corners free for a future mech.  You will be dropping puddles going North/South for your closest wall.",
+        {
+          "text": "Mechanic 1",
+          "substeps": [
+            "Healer/Ranged with the marker, you will be dropping a total of 6 puddles. 4 along the wall and then 2 slightly inside the arena, between the puddles you have just dropped.",
+            "Players in the middle of the arena you will be dropping 6 circle AoEs.  One in the middle, then North, then going clockwise around the boss.",
+            "Marked Healer/Ranged: https://youtube.com/clip/Ugkxp6xeorSB-LkpS329B56KWKSNj8KIXtBi?si=5bqKE7bnW7QuAUMK",
+            "Party in the middle: https://youtube.com/clip/UgkxScz2oRUOjmlXDtxBOxoNNYUZSbDtA1N8?si=e_jE9BtK4EiUo3Vr"
+          ]
+        },
+        {
+          "text": "Mechanic 2",
+          "substeps": [
+            "As 6th AoE drops for middle players, towers will spawn. 2 tank towers and 2 sets of two person towers.",
+            "MT get the first tank tower clockwise of north.  OT get the first tank tower anticlockwise.",
+            "Melee get the first 2 tower clockwise of north. Extra Ranged/Healer get the first 2 tower anticlockwise.",
+            "Towers resolve the same time the marked Ranged/Healer drop their 6th puddle."
+          ]
+        },
+        {
+          "text": "Mechanic 3",
+          "substeps": [
+            "4 players will now be tethered to a portal. Looking at the portal you want to go to the corner that is opposite and to the left.",
+            "All other players directly under the boss, making a box on the cardinals."
+          ]
+        },
+        {
+          "text": "Mechanic 4",
+          "substeps": [
+            "While tethered people are baiting. Boss will begin casting either 'Two-way Fireball' or 'Four-way Fireball'.",
+            "If Two-way Fireball, then the two closest players will be hit with line stacks.  North/South people rotate clockwise and stand behind your budy.",
+            "If Four-way Fireball, then just stay in your box.",
+            "People who dealt with the tethers be careful not to get too close to bait a line.  You can stack with the people if you want, just behind the person meant to be baiting.",
+            "Middle for Two-way: https://youtube.com/clip/Ugkx2VB2tE2uHfv9_RuoAr8s4qz_PLCwV0_W?si=FAOyNDpELQ5X3-_D"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "Crown-of-Arcadia-5",
+      "name": "Crown of Arcadia",
+      "category": "Raidwide Damage",
+      "timestamp": "9:46",
+      "description": "Raidwide Damage.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Heartbreak-Kick-1",
+      "name": "Heartbreak Kick 1",
+      "category": "Multihit Stack Tower",
+      "timestamp": "10:00",
+      "description": "Tower spawns under the boss. This is a multihit stack  Can have everyone stack in it or Tank Invuln it.",
+      "tips":[
+        "You can have the tanks invuln. If invulning, you want to try leave it as late as possible (first K in Kick).  Will also need the other tank to come in as your invuln is wearing off (3s) for the last hit of the stack.",
+        "Can have both tanks take a tower with full mits and some heals.",
+        "Can have the full party stack."
+      ]
+    },
+
+    {
+      "id": "Heartbreak-Kick-2",
+      "name": "Heartbreak Kick 2",
+      "category": "Multihit Stack Tower",
+      "timestamp": "10:23",
+      "description": "Tower spawns under the boss. This is a multihit stack  Can have everyone stack in it or Tank Invuln it.",
+      "tips":[
+        "You can have the tanks invuln. If invulning, you want to try leave it as late as possible (first K in Kick).  Will also need the other tank to come in as your invuln is wearing off (3s) for the last hit of the stack.",
+        "Can have both tanks take a tower with full mits and some heals.",
+        "Can have the full party stack."
+      ]
+    },
+
+    {
+      "id": "Heartbreak-Kick-3",
+      "name": "Heartbreak Kick 3",
+      "category": "Multihit Stack Tower",
+      "timestamp": "10:44",
+      "description": "Tower spawns under the boss. This is a multihit stack  Can have everyone stack in it or Tank Invuln it.",
+      "tips":[
+        "You can have the tanks invuln. If invulning, you want to try leave it as late as possible (first K in Kick).  Will also need the other tank to come in as your invuln is wearing off (3s) for the last hit of the stack.",
+        "Can have both tanks take a tower with full mits and some heals.",
+        "Can have the full party stack."
+      ]
+    },
+
+    {
+      "id": "Heartbreaker",
+      "name": "Heartbreaker",
+      "category": "Enrage",
+      "timestamp": "11:07",
+      "description": "Enrage"
+    }
+  ]
+}
