@@ -1,0 +1,291 @@
+{
+  "raidName": "M12SP1 - Dragon",
+  "tier": "Savage",
+  "patch": "Dawntrail 7.4",
+
+  "defaults": {
+    "macro": "???",
+    "waymarks": {},
+    "notes": ""
+  },
+
+  "mechanics": [
+    {
+      "id": "The-Fixer-1",
+      "name": "The Fixer",
+      "category": "Raidwide Damage",
+      "timestamp": "0:11",
+      "description": "Raidwide Damage.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Mortal-Slayer",
+      "name": "Mortal Slayer",
+      "category": "Baiting Orbs",
+      "timestamp": "0:29",
+      "description": "Orbs will begin appearing on the boss, 2 at a time.  They are target the closest players. Green orbs can be taken by anyone, purple need to be taken by tanks. Order: H1>H2>D1>D2>D3>D4 with tanks fitting in where they can. If one on each side, higher prio goes left.",
+      "video": "https://youtube.com/clip/Ugkxm-1DDY5qPWOpFlH_jjKMpJLMwcrV4Yj4?si=Li709f9B7SGvqG1k",
+      "notes": "Party head top left after the last set"
+    },
+
+    {
+      "id": "Grotesquerie-Act-1",
+      "name": "Grotesquerie: Act 1",
+      "category": "Main Mech",
+      "timestamp": "1:08",
+      "description": "All players start on the left. At end of cast all players get a debuff.  Need to check which position your dragon head is attatched; left shoulder, right shoulder or back. It will shoot in this direction later.",
+      "steps":[
+        "All players will have a purple debuff with one player having a sun debuff.  Role (Support or DPS) that has sun debuff will be stacking later, other role will have a yellow debuff for spreading.",
+        "Stack together at boss wall, edge of bosses hitbox on the left.",
+        "Drop 3 puddles along the wall to the middle and then one back towards the middle of the arena.  You should now be able to see which half of the arena is safe with the dragon head heading there.",
+        {
+            "text": "Stack Role",
+            "substeps":[
+                "Be next to the dragon head pointing your dragon to not hit others. Don't need a super tight stack.",
+                "Get back to the middle of the arena quickly after the mech resolves."
+            ]
+        },
+        {
+            "text": "Spread Role",
+            "substeps":[
+                "Melee at the front of the arena, ranged at the back.",
+                "Point your dragon head outside the arena.",
+                "Get back to the middle of the arena quickly after the mech resolves."
+            ]
+        },
+        {
+            "text": "After Snake Heads",
+            "substeps":[
+                "A bunch of globs will drop onto the arena, these will expand and blow up.",
+                "There will be a safe spot in one of the front corners, and a safespot at wall in the middle on opposite side.",
+                "Tanks are looking for safe spot on the far side. Both will be hit by a Tankbuster that you will stack together.",
+                "Rest of the party is looking for safespot on the close side.  Run to this safe spot and share the stack marker.",
+                "Tanks and party safe spot should be opposite each other.",
+                "Video showing the arena: https://youtube.com/clip/UgkxJXjdLBgpAC-LwIPRaYdVk_myCakscyOe?si=8ME7mlguqzds1yVO" 
+            ]
+        }
+      ],
+      "images":[
+        "../images/m12s/act-1-spread.png"
+      ]
+    },
+
+    {
+      "id": "The-Fixer-2",
+      "name": "The Fixer",
+      "category": "Raidwide Damage",
+      "timestamp": "1:43",
+      "description": "Raidwide Damage.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Grotesquerie-Act-2",
+      "name": "Grotesquerie: Act 2",
+      "category": "Main Mech",
+      "timestamp": "1:58",
+      "description": "One player from each role will get a numbered  debuff from 1-4 (indicating your timer). One role will also get Alpha, the other will get Beta; with times or 25,30, 35, or 40s. Chill in the middle of the arena until mechanic starts, might have to dodge some AoEs slightly.",
+      "video": "https://youtube.com/clip/UgkxTqmwLCOOaQGety7ZsECn9LfL-xRikg1D?si=WYaY5mIJa7o48d2o",
+      "steps":[
+        "4 puddles will drop around the arena.  This is the order for towers.  Not super important.",
+        "With about 11s left on the lowest debuff, the boss will trap all players in a ring.  There will be 2 puddles in the ring with you.",
+        "There is a gap in the jail that will rotate 90 degrees each time anticlockwise.",
+        "Each time a set of debuffs expires, a mechanic will happen.",
+        {
+            "text": "Set 1",
+            "substeps":[
+                "Alpha that just expired (1), run out of the jail. Go and stand in puddle 3 on the outside (can wait next to it until it turns into a tower but doesn't seem to matter).",
+                "Beta that just expired (1), run opposite the exit, dropping a puddle and then rejoin the group."
+            ]
+        },
+        {
+            "text": "Set 2",
+            "substeps":[
+                "Alpha 3 get the second tower that was already inside the jail, Beta 3 get the tower that the first Beta dropped. Quickly get back to the middle after your tower as you are next to run out and need to set up tether.",
+                "Alpha 2 run out the jail and go find tower 4.",
+                "Beta 2 run opposite the exit and drop your tower."
+            ]
+        },
+        {
+            "text": "Set 3",
+            "substeps":[
+                "Alpha 4 get the second tower that was already inside the jail, Beta 4 get the tower that the second Beta dropped. Quickly get back to the middle after your tower as you are next to run out and need to set up tether.",
+                "Alpha 3 run out the jail and chill.",
+                "Beta 3 run opposite the exit and drop your tower."
+            ]
+        },
+        {
+            "text": "Set 4",
+            "substeps":[
+                "Beta 1 get the tower that the third Beta dropped.",
+                "Alpha 4 run out the jail and chill.",
+                "Beta 4 run opposite the exit and drop your tower."
+            ]
+        },
+        {
+            "text": "Set 5",
+            "substeps":[
+                "Beta 2 get the tower that the fourth Beta dropped."
+            ]
+        },
+        {
+            "text": "Set 6",
+            "substeps":[
+                "Beta run out of the jail."
+            ]
+        }
+      ]
+    },
+
+    {
+      "id": "Splattershed",
+      "name": "Splattershed",
+      "category": "Raidwide Damage",
+      "timestamp": "3:03",
+      "description": "Raidwide Damage.",
+      "damage": "???"
+    },
+
+    {
+      "id": "Grotesquerie-Act-3",
+      "name": "Grotesquerie: Act 3",
+      "category": "Main Mech",
+      "timestamp": "3:24",
+      "description": "After cast, all players will get a dragon head on them. 2 players with dragon on the front, 2 with dragon on the back, 2 with dragon on each side. This dragon will shoot out a tower that is handled in mechanic 1.",
+      "video": "",
+      "steps":[
+        {
+            "text": "Mechanic 1",
+            "substeps":[
+                "Start by going to the cardinal opposite your dragon head.  For example if the dragon in on your front, you go to the South, if its on your right shoulder, you go to the west.",
+                "One Support and one dps will share the same direction of the dragon.",
+                "AoEs will then spawn around the arena, indicating where a dragon will come up and crush the arena.  Check if the cardinal or intercardinal is safe.  If intercardinal, all players rotate clockwise.",
+                "When positioning in your safe square, supports top right, dps bottom left.  EXCEPTION: IF YOU ARE IN THE DIRECT NORTH OR SOUTH PLATFORM, SUPPORTS TOP LEFT, DPS BOTTOM RIGHT.",
+                "Video: https://youtube.com/clip/Ugkx9aC_q-FHkFfkaYiE90tacXYZgVZ5Oeb1?si=kjq9671iSbucOZhJ"
+            ]
+        },
+        {
+            "text": "Mechanic 2",
+            "substeps":[
+                "Middle of the arena will now respawn.",
+                "2 dragons will appear Either NW/NE if cardinals exist, or W/E if intercardinals exist.",
+                "These dragons will shoot a line tank buster on the closest players. There will also be a sprad after (Not 100% sure how the targetting works here).",
+                "Refer to diagrams below for spread positions.",
+                "Video, ignore there swap (haven't figured that out yet and other groups don't do it): https://youtube.com/clip/UgkxywVrQNnRDZjHXNYiD4cJacL1_J_n08TI?si=t7LEqMwGi1wCKezl"
+            ]
+        },
+        {
+            "text": "The Fixer",
+            "substeps":[
+                "Group top left for mitigation + prep for the next mech.",
+                "Heavy raidwide damage."
+            ]
+        }
+      ],
+      "images":[
+        "../images/m12s/act3-card.png",
+        "../images/m12s/act3-intercard.png"
+      ],
+      "warning":"Boss is untargetable surely after you get your dragons at the start. Retargetable once you get to the Tankbuster dragons."
+    },
+
+    {
+      "id": "Grotesquerie-Curtain-Call",
+      "name": "Grotesquerie: Curtain Call",
+      "category": "Main Mech",
+      "timestamp": "4:10",
+      "description": "Party begins top left. Once cast finishes one role will get purple debuffs, this will be explained below.",
+      "video": "https://youtube.com/clip/Ugkx7_qzM02g9_uq6jTfLw4buuCqKdI_bif_?si=IXkxIJFAw71J2Fwl",
+      "steps":[
+        {
+            "text": "Puddles",
+            "substeps":[
+                "Drop 5 puddles while rotating around the boss.",
+                "During this time, the boss will extend an arm again to cleave half the arena. Those with purple debuffs need to get hit by this arms cleave.",
+                "All players need to be spread as this arm hits. Purple group in getting hit by the arm, non purple group avoiding the arm.",
+                "North->MT/D1,OT/D2,H1/D3,H2/D4<-South."
+            ]
+        },
+        {
+            "text": "Chains",
+            "substeps":[
+                "After the spread hit, all players group in the middle.",
+                "A bunch of globs will spawn around the arena.  Look for the two safe corners, one west, one east.",
+                "Once alpha debuffs expire, supports sprint west, dps east to break chains. Need to spread while sprinting out to avoid hitting others when your chain breaks.  Same lineup as above.",
+                "After chains break, move to the safespot on your side and wait there for globs to explode."
+            ]
+        }
+      ],
+      "tips":[
+        "If chains break fast enough, then melee can always make it to the front safe spot, no matter which side it is on."
+      ]
+    },
+
+    {
+      "id": "Mortal-Slayer-2",
+      "name": "Mortal Slayer",
+      "category": "Baiting Orbs",
+      "timestamp": "5:05",
+      "description": "Orbs will begin appearing on the boss, 2 at a time.  They are target the closest players. Green orbs can be taken by anyone, purple need to be taken by tanks. Order: H1>H2>D1>D2>D3>D4 with tanks fitting in where they can. If one on each side, higher prio goes left.",
+      "video": "https://youtube.com/clip/Ugkxm-1DDY5qPWOpFlH_jjKMpJLMwcrV4Yj4?si=Li709f9B7SGvqG1k",
+      "notes": "Party head middle after last set."
+    },
+
+    {
+      "id": "Slaughtershed",
+      "name": "Slaughtershed",
+      "category": "Spread/Stack",
+      "timestamp": "5:38",
+      "description": "Raidwide Damage. One role will get AoEs and the other will get a stack marker. A bunch of globs will spawn around the arena.",
+      "steps":[
+        "AoEs go to the large safespot and make a box. Other role go to the small safespot and stack.",
+        "While running to this safespot, look for the arms growing.  Which arm grows first will activate first.",
+        "If small arm then it will be a knockback, one from each side. Can anti-kb one of them.",
+        "Knockback Video: https://youtube.com/clip/UgkxY_uDnT_a4V6iePgbjYkb8CjD7gb7UGKI?si=KSLghxQ1-Fhv1hig",
+        "If large arms then it will cleave that half of the arena, just need to step side to side.",
+        "Cleave Video: https://youtube.com/clip/Ugkxm6MlVK3EfyWrvZYuq97QZ4dW16_inDd1?si=WLbwJea5xat-5owX"
+      ]
+    },
+
+    {
+      "id": "Slaughtershed-2",
+      "name": "Slaughtershed",
+      "category": "Spread/Stack",
+      "timestamp": "6:06",
+      "description": "Raidwide Damage. One role will get AoEs and the other will get a stack marker. A bunch of globs will spawn around the arena.",
+      "steps":[
+        "AoEs go to the large safespot and make a box. Other role go to the small safespot and stack.",
+        "While running to this safespot, look for the arms growing.  Which arm grows first will activate first.",
+        "If small arm then it will be a knockback, one from each side. Can anti-kb one of them.",
+        "Knockback Video: https://youtube.com/clip/UgkxY_uDnT_a4V6iePgbjYkb8CjD7gb7UGKI?si=KSLghxQ1-Fhv1hig",
+        "If large arms then it will cleave that half of the arena, just need to step side to side.",
+        "Cleave Video: https://youtube.com/clip/Ugkxm6MlVK3EfyWrvZYuq97QZ4dW16_inDd1?si=WLbwJea5xat-5owX"
+      ]
+    },
+
+    {
+      "id": "Slaughtershed-3",
+      "name": "Slaughtershed",
+      "category": "Spread/Stack",
+      "timestamp": "6:35",
+      "description": "Raidwide Damage. One role will get AoEs and the other will get a stack marker. A bunch of globs will spawn around the arena.",
+      "steps":[
+        "AoEs go to the large safespot and make a box. Other role go to the small safespot and stack.",
+        "While running to this safespot, look for the arms growing.  Which arm grows first will activate first.",
+        "If small arm then it will be a knockback, one from each side. Can anti-kb one of them.",
+        "Knockback Video: https://youtube.com/clip/UgkxY_uDnT_a4V6iePgbjYkb8CjD7gb7UGKI?si=KSLghxQ1-Fhv1hig",
+        "If large arms then it will cleave that half of the arena, just need to step side to side.",
+        "Cleave Video: https://youtube.com/clip/Ugkxm6MlVK3EfyWrvZYuq97QZ4dW16_inDd1?si=WLbwJea5xat-5owX"
+      ]
+    },
+
+    {
+      "id": "Refreshing-Overkill",
+      "name": "Refreshing Overkill",
+      "category": "Enrage",
+      "timestamp": "7:09",
+      "description": "Enrage"
+    }
+  ]
+}
